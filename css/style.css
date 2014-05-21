@@ -1,3 +1,59 @@
 body {
 	padding-top: 100px;
 }
+
+.row {
+	padding: 0.625em 0;
+}
+
+.public-spaces {
+	color: orange;
+}
+
+.public-spaces.project {
+	background: orange;
+}
+
+.public-spaces.category-block {
+	border: 0.25em solid orange;
+}
+
+.civic {
+
+}
+
+.sports {
+
+}
+
+.commercial {
+
+}
+
+.retail {
+
+}
+
+.restaurant {
+
+}
+
+.interiors {
+
+}
+
+.conceptual {
+
+}
+
+.category-block {
+
+}
+
+.featured-project {
+
+}
+
+.project {
+
+}
