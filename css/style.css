@@ -3,57 +3,129 @@ body {
 }
 
 .row {
-	padding: 0.625em 0;
+	margin: 0.625em 0;
+}
+
+.category-row {
+	height: 15.571em;
 }
 
 .public-spaces {
 	color: orange;
+	height: 100%;
 }
 
-.public-spaces.project {
+.public-spaces .project {
 	background: orange;
+		height: 100%;
 }
 
-.public-spaces.category-block {
+.public-spaces .category-block {
 	border: 0.25em solid orange;
-}
-
-.civic {
-
+		height: 100%;
 }
 
 .sports {
+	color: orangered;
+	height: 100%;
+}
 
+.sports .project {
+	background: orangered;
+		height: 100%;
+}
+
+.sports .category-block {
+	border: 0.25em solid orangered;
+		height: 100%;
 }
 
 .commercial {
-
+	color: violet;
+	height: 100%;
 }
 
-.retail {
+.commercial .project {
+	background: violet;
+		height: 100%;
+}
 
+.commercial .category-block {
+	border: 0.25em solid violet;
+		height: 100%;
 }
 
 .restaurant {
+	color: blueviolet;
+	height: 100%;
+}
 
+.restaurant .project {
+	background: blueviolet;
+		height: 100%;
+}
+
+.restaurant .category-block {
+	border: 0.25em solid blueviolet;
+		height: 100%;
+}
+
+.retail {
+	color: blue;
+	height: 100%;
+}
+
+.retail .project {
+	background: blue;
+		height: 100%;
+}
+
+.retail .category-block {
+	border: 0.25em solid blue;
+		height: 100%;
+}
+
+.civic {
+	color: lightblue;
+	height: 100%;
+}
+
+.civic .project {
+	background: lightblue;
+		height: 100%;
+}
+
+.civic .category-block {
+	border: 0.25em solid lightblue;
+		height: 100%;
 }
 
 .interiors {
+	color: green;
+	height: 100%;
+}
 
+.interiors .project {
+	background: green;
+		height: 100%;
+}
+
+.interiors .category-block {
+	border: 0.25em solid green;
+		height: 100%;
 }
 
 .conceptual {
-
+	color: yellow;
+	height: 100%;
 }
 
-.category-block {
-
+.conceptual .project {
+	background: yellow;
+		height: 100%;
 }
 
-.featured-project {
-
-}
-
-.project {
-
+.conceptual .category-block {
+	border: 0.25em solid yellow;
+		height: 100%;
 }
