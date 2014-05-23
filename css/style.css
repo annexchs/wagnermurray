@@ -1,6 +1,40 @@
+/* 
+Theme Name: Wags
+Version: 1.0
+Author: Annex Studio, LLC
+Author URI: http://www.annexstudio.com
+*/
+
+
 body {
 	padding-top: 100px;
 }
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+h5 {
+	margin-top: 0;
+	padding-top: 0.429em;
+}
+
+h6 {
+	font-size: 1em;
+}
+
 
 .row {
 	margin: 0.625em 0;
@@ -129,3 +163,64 @@ body {
 	border: 0.25em solid yellow;
 		height: 100%;
 }
+
+.header {
+	color: #AAAAAA;
+}
+
+.header a {
+	color: #AAAAAA;
+}
+
+.header a:hover {
+	color: #CCCCCC;
+	text-decoration: none;
+}
+
+.header a:active {
+	color: #CCCCCC;
+}
+
+.header a:focus {
+	color: #CCCCCC;
+}
+
+address {
+	line-height: 2em;
+	text-align: right;
+}
+
+.navi {
+	line-height: 2em;
+	font-weight: bold;
+}
+
+.date {
+	font-size: 70%;
+	color: #CCCCCC;
+}
+
+.homeheadline {
+	font-size: 1.143em;
+}
+
+.tease {
+	padding-right: 1em;
+}
+
+.tease a {
+	color: #AAAAAA;
+}
+
+.tease a:hover {
+	color: #AAAAAA;
+}
+
+.tease a:active {
+	color: #AAAAAA;
+}
+
+.tease a:focus {
+	color: #AAAAAA;
+}
+
