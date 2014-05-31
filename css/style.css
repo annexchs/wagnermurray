@@ -19,12 +19,13 @@ h2 {
 }
 
 h3 {
+	font-size: 1.5em;
 
 }
 
 h4 {
-	font-size: 1.5em;
-	text-transform: uppercase;
+	font-size: 1.25em;
+	font-style: italic;
 }
 
 h5 {
@@ -36,6 +37,14 @@ h6 {
 	font-size: 1em;
 }
 
+.uppercase {
+	text-transform: uppercase;
+}
+
+.h4fix {
+	margin-top: 0;
+	padding-top: 0.429em;
+}
 
 .row {
 	margin: 0.625em 0;
