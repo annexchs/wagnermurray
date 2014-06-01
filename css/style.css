@@ -445,3 +445,33 @@ address {
 	color: #CCCCCC;
 }
 
+.hidden-row{
+  visibility: hidden;
+}
+
+.public-spaces, .sports {
+  transition: all 0.3s ease;
+}
+
+.featured-project .bkg-responsive, .featured-project .bkg-responsive:hover {
+  border: 0;
+}
+
+.bkg-responsive {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0;
+}
+
+#public-spaces .regular-project .bkg-responsive {
+  background-position: -100%;
+  background-color: orange;
+}
+
+#sports .regular-project .bkg-responsive {
+  background-position: -100%;
+  background-color: red;
+}
+
