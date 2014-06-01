@@ -47,3 +47,5 @@
       }
     });
   </script>
+  
+<?php get_footer(); ?>
