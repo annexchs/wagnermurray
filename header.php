@@ -7,8 +7,7 @@
   <title>
     Wagner Murray Architects, P.A. - Charlotte, NC
   </title><!-- Bootstrap -->
-  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <link href="css/style.css" rel="stylesheet" type="text/css"><!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
