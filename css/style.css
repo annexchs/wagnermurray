@@ -9,33 +9,51 @@ Author URI: http://www.annexstudio.com
 body {
 	padding-top: 100px;
 	padding-bottom: 100px;
+	color:#AAAAAA;
 }
 
 h1 {
-
+	font-size: 2.5em;
+	color: #111111;
 }
 
 h2 {
+	font-size: 1.3em;
+		color: #111111;
 
 }
 
 h3 {
 	font-size: 1.5em;
+		color: #111111;
+
 
 }
 
 h4 {
 	font-size: 1.25em;
 	font-style: italic;
+		color: #111111;
+
 }
 
 h5 {
 	margin-top: 0;
 	padding-top: 0.429em;
+		color: #111111;
+
 }
 
 h6 {
 	font-size: 1em;
+		color: #111111;
+
+}
+
+h7 {
+		font-size: 70%;
+			color: #CCCCCC;
+
 }
 
 .uppercase {
@@ -194,6 +212,10 @@ h6 {
 
 .header a:focus {
 	color: #CCCCCC;
+}
+
+.header h5,h6 {
+	color: #AAAAAA;
 }
 
 address {
@@ -369,6 +391,7 @@ address {
 	bottom: 15%;
 	color: white;
 	left: 20%;
+	font-size: 2.5em;
 }
 
 .wrapper h6 {
@@ -393,5 +416,26 @@ address {
 
 .bold {
 	font-weight: bold;
+}
+
+.article {
+	padding-top: 3em;
+}
+
+.article a {
+	color: #AAAAAA;
+}
+
+.article a:hover {
+	color: #CCCCCC;
+	text-decoration: none;
+}
+
+.article a:active {
+	color: #CCCCCC;
+}
+
+.article a:focus {
+	color: #CCCCCC;
 }
 
