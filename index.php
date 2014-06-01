@@ -6,31 +6,31 @@
   </div>
   
   <div class="row category-row" id="public-spaces">
+    
     <div class="col-md-2 public-spaces">
-      <div class="category-block">.col-md-1</div>
+      <div class="category-block">Public Spaces</div>
     </div>
-    <div class="col-md-2 public-spaces featured-project">
-      <div class="bkg-responsive" style="background-image:url(http://placehold.it/500x500);"></div>
+  
+  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+  <?php if (in_category('3')) : ?>
+  
+    
+    <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
+    
+    <div class="public-spaces <?php if (in_category('6')) : ?>col-md-2 featured-project<?php else: ?>col-md-1 regular-project<?php endif; ?>">
+      <div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"></div>
     </div>
-    <div class="col-md-1 public-spaces regular-project">
-      <div class="bkg-responsive" style="background-image:url(http://placehold.it/500x500);"></div>
-    </div>
-    <div class="col-md-1 public-spaces regular-project">
-      <div class="bkg-responsive" style="background-image:url(http://placehold.it/500x500);"></div>
-    </div>
-    <div class="col-md-1 public-spaces regular-project">
-      <div class="bkg-responsive" style="background-image:url(http://placehold.it/500x500);"></div>
-    </div>
-    <div class="col-md-1 public-spaces regular-project">
-      <div class="bkg-responsive" style="background-image:url(http://placehold.it/500x500);"></div>
-    </div>
-    <div class="col-md-1 public-spaces regular-project">
-      <div class="bkg-responsive" style="background-image:url(http://placehold.it/500x500);"></div>
-    </div>
-    <div class="col-md-1 public-spaces regular-project">
-      <div class="bkg-responsive" style="background-image:url(http://placehold.it/500x500);"></div>
-    </div>
+    
+  
+  
+  <? endif; ?>
+  
+  <?
+  endwhile;
+  endif;
+  ?>
   </div>
+  
   
   <script type="text/javascript">
     $( ".public-spaces" ).hover(function() {
