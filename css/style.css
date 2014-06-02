@@ -449,7 +449,7 @@ address {
   visibility: hidden;
 }
 
-.public-spaces, .sports {
+.public-spaces, .sports, .commercial, .retail, .restaurant, .civic, .interiors, .conceptual {
   transition: all 0.3s ease;
 }
 
@@ -475,3 +475,48 @@ address {
   background-color: red;
 }
 
+#commercial .regular-project .bkg-responsive {
+  background-position: -100%;
+  background-color: violet;
+}
+
+#retail .regular-project .bkg-responsive {
+  background-position: -100%;
+  background-color: blue;
+}
+
+#restaurant .regular-project .bkg-responsive {
+  background-position: -100%;
+  background-color: purple;
+}
+
+#civic .regular-project .bkg-responsive {
+  background-position: -100%;
+  background-color: lightblue;
+}
+
+#interiors .regular-project .bkg-responsive {
+  background-position: -100%;
+  background-color: green;
+}
+
+#conceptual .regular-project .bkg-responsive {
+  background-position: -100%;
+  background-color: yellow;
+}
+
+.featured-project {}
+
+.bkg-responsive .title {
+  position: absolute;
+  left: 1em;
+  bottom: 0.5em;
+}
+
+.regular-project .title {
+  opacity: 0;
+}
+
+.featured-project .title {
+  opacity: 1;
+}
