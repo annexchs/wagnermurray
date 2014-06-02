@@ -74,7 +74,7 @@ h7 {
 }
 
 .category-row {
-	height: 15.571em;
+	height: 15.571em !important;
 }
 
 .public-spaces {
