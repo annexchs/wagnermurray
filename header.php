@@ -24,7 +24,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-2 header logo">
-        <img class="img-responsive" src="/wp2/wp-content/themes/wagner-murray/images/logo.png" alt="Wagner Murray Architects">
+        <img class="img-responsive" src="<?php echo site_url(); ?>/wp-content/themes/wagner-murray/images/logo.png" alt="Wagner Murray Architects">
       </div>
       <div class="col-md-2 header blank">
       </div>
@@ -45,7 +45,7 @@
       <div class="col-md-2 header address">
         <address><strong>Wagner Murray Archictects, P.A.</strong>
           601 S. Cedar St., Studio 101
-          Charlotte, NC 28202
+          Charlotte, NC 28202<br>
           (704) 555-5555</address>
       </div>
     </div>
