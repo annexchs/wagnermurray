@@ -16,7 +16,7 @@
       </style>
       <h6 class="uppercase" >
       <?php $catCount = 0; foreach((get_the_Category()) as $category) { ?>
-        <span class="<? echo $category->slug ?>"><?php echo $category->name ?></span>
+        <span class="<?php echo $category->slug ?>"><?php echo $category->name ?></span>
       <?php $catCount += 1; ?>
         <span class="header">&nbsp;|&nbsp;</span>
       <?php }; ?>
