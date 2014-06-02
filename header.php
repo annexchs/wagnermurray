@@ -35,13 +35,17 @@
           <li><a href="#">BLOG</a></li>
           <li><a href="#">CONTACT</a></li></ul>
       </div>
+      <?php
+      $headerPost = new WP_Query();
+      $headerPost->query('showposts=1&cat=18');
+      while ($headerPost->have_posts()) : $headerPost->the_post(); ?>
       <div class="col-md-2 header tease">
         <a href="#"><h5><strong>LATEST FROM THE BLOG</strong></h5></a>
-        <a href="#"><h6 class="homeheadline"><em>Headline</em></h6></a>
-        <a href="#"><div class="date">POSTED JUNE 2, 2014</div></a>
-        <a href="#"><p>Preview text lorem ipsum
-          dolor sit amet</p></a>
+        <a href="<?php the_permalink(); ?>"><h6 class="homeheadline"><em><?php the_title(); ?></em></h6></a>
+        <div class="date">POSTED <?php the_date() ?></div>
+        <a href="#"><p><?php the_excerpt(); ?></p></a>
       </div>
+      <?php endwhile; ?>
       <div class="col-md-2 header address">
         <address><strong>Wagner Murray Archictects, P.A.</strong>
           601 S. Cedar St., Studio 101
