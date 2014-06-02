@@ -463,6 +463,8 @@ address {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0;
+  position: relative;
+  overflow: hidden;
 }
 
 #public-spaces .regular-project .bkg-responsive {
@@ -486,7 +488,7 @@ address {
 }
 
 #restaurant .regular-project .bkg-responsive {
-  background-position: -100%;
+  background-position: -100% -100%;
   background-color: #81008B;
 }
 
@@ -505,18 +507,39 @@ address {
   background-color: #E5CE21;
 }
 
-.featured-project {}
+.featured-project a{
+color: #fff;
+}
+
+.featured-project a:hover{
+color: #FFF;
+}
 
 .bkg-responsive .title {
   position: absolute;
-  left: 1em;
-  bottom: 0.5em;
+  left: 0;
+  bottom: 0;
+  /*width: 100%;*/
+  padding: 0.5em 1em;
+background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.93) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.93))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.93) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.93) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.93) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.93) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#ed000000',GradientType=0 ); /* IE6-9 */
+
+
 }
+
+
 
 .regular-project .title {
   opacity: 0;
+  min-width: 200px;
 }
 
 .featured-project .title {
   opacity: 1;
+  min-width: 100%;
 }
