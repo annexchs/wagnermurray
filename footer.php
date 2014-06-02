@@ -1,5 +1,7 @@
+        </div>
+        <div class="container">
           <hr>
-          <p class="pull-right header">&copy <a href="http://www.annexstudio.com">Annex Studio, LLC</a></p>
+          <a class="pull-right" href="http://www.annexstudio.com"><img src="wp-content/themes/wagner-murray/images/built-by-annex-bumper.png"></a>
         </div>
       </body>
     </html>
