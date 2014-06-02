@@ -53,7 +53,7 @@
 
   <?php wp_head(); ?>
 </head>
- <body>
+ <body onload="replaceWithRetinaGraphicsIfNeeded()">
   <div class="container">
     <div class="row">
       <div class="col-md-2 header logo">

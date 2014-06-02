@@ -28,7 +28,7 @@
     <?php if (in_category('public-spaces') && !in_category('featured-ps')) : ?>
       <?php $count++; if ($count<8) : ?>
         <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
-          <div class="public-spaces col-md-1 regular-project">
+          <div class="public-spaces col-md-1 regular-project hidden-sm">
             <a href="<?php the_permalink() ?>">
               <div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)">
                 <div class="title"><?php the_title(); ?></div>
