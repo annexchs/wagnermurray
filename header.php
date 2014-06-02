@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>
-    Wagner Murray Architects, P.A. - Charlotte, NC
-  </title><!-- Bootstrap -->
+      <?php wp_title('&vert;'); ?>
+        </title><!-- Bootstrap -->
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,7 +24,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-2 header logo">
-        <img class="img-responsive" src="<?php echo site_url(); ?>/wp-content/themes/wagner-murray/images/logo.png" alt="Wagner Murray Architects">
+        <a href="<?php echo site_url(); ?>"><img class="img-responsive" src="<?php echo site_url(); ?>/wp-content/themes/wagner-murray/images/logo.png" alt="Wagner Murray Architects"></a>
       </div>
       <div class="col-md-2 header blank">
       </div>
