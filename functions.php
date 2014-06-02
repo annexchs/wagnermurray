@@ -21,22 +21,5 @@ function custom_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999)
 
-function blog-post_register()
-{
-$labels = array(
-'name' => _x('blog-post', 'Blog Post'),
-'singular_name' => _x('blog-post', 'Blog Post')
-);
-$args = array(
-'labels' => $labels,
-'public' => true,
-'show_ui' => true,
-'query_var' => true,
-'rewrite' => true,
-'capability_type' => 'post',
-'hierarchical' => false,
-'supports' => array('title','editor','thumbnail')
-);
-register_post_type( 'blog-post' , $args );
-}
+
 ?>
