@@ -54,7 +54,7 @@
 
           <!-- Wrapper for slides -->
 
-        <div class="carousel-inner">
+        <div class="carousel-inner" style="max-height:600; overflow:hidden">
           <?php $imgCount=0; foreach($images as $image) { 
             if ($imgCount == 0) {
           ?>
