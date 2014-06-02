@@ -9,6 +9,10 @@
         .uppercase .header:last-child {
           display:none;
         }
+        .carousel-inner > .active {
+          max-height:600px;
+          overflow:hidden;
+        }
       </style>
       <h6 class="uppercase" >
       <?php $catCount = 0; foreach((get_the_Category()) as $category) { ?>
@@ -54,7 +58,7 @@
 
           <!-- Wrapper for slides -->
 
-        <div class="carousel-inner" style="max-height:600; overflow:hidden">
+        <div class="carousel-inner">
           <?php $imgCount=0; foreach($images as $image) { 
             if ($imgCount == 0) {
           ?>
