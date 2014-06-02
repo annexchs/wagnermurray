@@ -78,122 +78,122 @@ h7 {
 }
 
 .public-spaces {
-	color: orange;
+	color: #CC3E00;
 	height: 100%;
 }
 
 .public-spaces .project {
-	background: orange;
+	background: #CC3E00;
 		height: 100%;
 }
 
 .public-spaces .category-block {
-	border: 0.25em solid orange;
+	border: 0.25em solid #CC3E00;
 		height: 100%;
 }
 
 .sports {
-	color: orangered;
+	color: #911C00;
 	height: 100%;
 }
 
 .sports .project {
-	background: orangered;
+	background: #911C00;
 		height: 100%;
 }
 
 .sports .category-block {
-	border: 0.25em solid orangered;
+	border: 0.25em solid #911C00;
 		height: 100%;
 }
 
 .commercial {
-	color: violet;
+	color: #4D1E8B;
 	height: 100%;
 }
 
 .commercial .project {
-	background: violet;
+	background: #4D1E8B;
 		height: 100%;
 }
 
 .commercial .category-block {
-	border: 0.25em solid violet;
+	border: 0.25em solid #4D1E8B;
 		height: 100%;
 }
 
 .restaurant {
-	color: blueviolet;
+	color: #81008B;
 	height: 100%;
 }
 
 .restaurant .project {
-	background: blueviolet;
+	background: #81008B;
 		height: 100%;
 }
 
 .restaurant .category-block {
-	border: 0.25em solid blueviolet;
+	border: 0.25em solid #81008B;
 		height: 100%;
 }
 
 .retail {
-	color: blue;
+	color: #201B90;
 	height: 100%;
 }
 
 .retail .project {
-	background: blue;
+	background: #201B90;
 		height: 100%;
 }
 
 .retail .category-block {
-	border: 0.25em solid blue;
+	border: 0.25em solid #201B90;
 		height: 100%;
 }
 
 .civic {
-	color: lightblue;
+	color: #079AD7;
 	height: 100%;
 }
 
 .civic .project {
-	background: lightblue;
+	background: #079AD7;
 		height: 100%;
 }
 
 .civic .category-block {
-	border: 0.25em solid lightblue;
+	border: 0.25em solid #079AD7;
 		height: 100%;
 }
 
 .interiors {
-	color: green;
+	color: #1D961C;
 	height: 100%;
 }
 
 .interiors .project {
-	background: green;
+	background: #1D961C;
 		height: 100%;
 }
 
 .interiors .category-block {
-	border: 0.25em solid green;
+	border: 0.25em solid #1D961C;
 		height: 100%;
 }
 
 .conceptual {
-	color: yellow;
+	color: #E5CE21;
 	height: 100%;
 }
 
 .conceptual .project {
-	background: yellow;
+	background: #E5CE21;
 		height: 100%;
 }
 
 .conceptual .category-block {
-	border: 0.25em solid yellow;
+	border: 0.25em solid #E5CE21;
 		height: 100%;
 }
 
@@ -449,7 +449,7 @@ address {
   visibility: hidden;
 }
 
-.public-spaces, .sports {
+.public-spaces, .sports, .commercial, .retail, .restaurant, .civic, .interiors, .conceptual {
   transition: all 0.3s ease;
 }
 
@@ -463,15 +463,83 @@ address {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0;
+  position: relative;
+  overflow: hidden;
 }
 
 #public-spaces .regular-project .bkg-responsive {
   background-position: -100%;
-  background-color: orange;
+  background-color: #CC3E00;
 }
 
 #sports .regular-project .bkg-responsive {
   background-position: -100%;
-  background-color: red;
+  background-color: #911C00;
 }
 
+#commercial .regular-project .bkg-responsive {
+  background-position: -100%;
+  background-color: #4D1E8B;
+}
+
+#retail .regular-project .bkg-responsive {
+  background-position: -100%;
+  background-color: #201B90;
+}
+
+#restaurant .regular-project .bkg-responsive {
+  background-position: -100% -100%;
+  background-color: #81008B;
+}
+
+#civic .regular-project .bkg-responsive {
+  background-position: -100%;
+  background-color: #079AD7;
+}
+
+#interiors .regular-project .bkg-responsive {
+  background-position: -100%;
+  background-color: #1D961C;
+}
+
+#conceptual .regular-project .bkg-responsive {
+  background-position: -100%;
+  background-color: #E5CE21;
+}
+
+.featured-project a{
+color: #fff;
+}
+
+.featured-project a:hover{
+color: #FFF;
+}
+
+.bkg-responsive .title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  /*width: 100%;*/
+  padding: 0.5em 1em;
+background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.93) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.93))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.93) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.93) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.93) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.93) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#ed000000',GradientType=0 ); /* IE6-9 */
+
+
+}
+
+
+
+.regular-project .title {
+  opacity: 0;
+  min-width: 200px;
+}
+
+.featured-project .title {
+  opacity: 1;
+  min-width: 100%;
+}
