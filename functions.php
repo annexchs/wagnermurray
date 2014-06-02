@@ -16,4 +16,8 @@ if( !function_exists("theme_styles") ) {
 }
 add_action( 'wp_enqueue_scripts', 'theme_styles' );
 
+function custom_excerpt_length( $length ) {
+  return 10;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999)
 ?>
