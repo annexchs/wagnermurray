@@ -24,7 +24,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-2 header logo">
-        <img class="img-responsive" src="/images/logo.png" alt="Wagner Murray Architects">
+        <img class="img-responsive" src="/wp2/wp-content/themes/wagner-murray/images/logo.png" alt="Wagner Murray Architects">
       </div>
       <div class="col-md-2 header blank">
       </div>
