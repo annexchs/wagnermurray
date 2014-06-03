@@ -83,7 +83,7 @@ a {
 	height: 15.571em !important;
 }
 
-.public-spaces {
+.public-spaces, a.public-spaces:hover {
 	color: #CC3E00;
 	height: 100%;
 }
@@ -98,7 +98,7 @@ a {
 		height: 100%;
 }
 
-.sports {
+.sports, sports a:hover {
 	color: #911C00;
 	height: 100%;
 }
