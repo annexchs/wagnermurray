@@ -422,7 +422,7 @@ address {
 
 .wrapper h6 {
 	position: absolute;
-	bottom: 35%;
+	bottom: 10%;
 	color: white;
 	left: 20%;
 	font-size: 70%;
@@ -430,10 +430,26 @@ address {
 	font-weight: normal;
 }
 
-.wrapper h7 {
+.wrapper-black {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  padding: 0;
+  position: relative;
+}
+
+.wrapper-black h1 {
 	position: absolute;
-	bottom: 10%;
-	color: white;
+	bottom: 15%;
+	color: #111;
+	left: 20%;
+	font-size: 2.5em;
+}
+
+.wrapper-black h6 {
+	position: absolute;
+	bottom: 0;
+	color: #111;
 	left: 20%;
 	font-size: 70%;
 	text-transform: uppercase;
