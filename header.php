@@ -48,16 +48,11 @@
         <a href="#"><p><?php the_excerpt(); ?></p></a>
       </div>
       <?php endwhile; ?>
-      <div class="col-xs-2 header address hidden-xs hidden-sm">
-        <address><strong>Wagner Murray Archictects, P.A.</strong>
-          601 S. Cedar St., Studio 101
-          Charlotte, NC 28202<br>
-          (704) 555-5555</address>
-      </div>
-      <div class="col-xs-2 header address address-mobile hidden-md hidden-lg">
+      <div class="col-xs-2 header address">
         <address><strong>Wagner Murray Archictects, P.A.</strong>
           601 S. Cedar St., Studio 101
           Charlotte, NC 28202<br>
           (704) 372-8603</address>
       </div>
+      
     </div>
