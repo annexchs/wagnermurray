@@ -25,12 +25,12 @@
  <body>
   <div class="container">
     <div class="row">
-      <div class="col-md-2 header logo">
+      <div class="col-xs-2 header logo">
         <a href="<?php echo site_url(); ?>"><img class="img-responsive" src="<?php echo site_url(); ?>/wp-content/themes/wagner-murray/images/logo.png" alt="Wagner Murray Architects"></a>
       </div>
-      <div class="col-md-2 header blank">
+      <div class="col-xs-2 header blank">
       </div>
-      <div class="col-md-2 header navi">
+      <div class="col-xs-2 header navi">
         <ul class="list-unstyled">
           <li><a href="#">PROJECTS</a></li>
           <li><a href="#">ABOUT</a></li>
@@ -48,16 +48,16 @@
         <a href="#"><p><?php the_excerpt(); ?></p></a>
       </div>
       <?php endwhile; ?>
-      <div class="col-md-2 header address hidden-xs hidden-sm">
+      <div class="col-xs-2 header address hidden-xs hidden-sm">
         <address><strong>Wagner Murray Archictects, P.A.</strong>
           601 S. Cedar St., Studio 101
           Charlotte, NC 28202<br>
           (704) 555-5555</address>
       </div>
-      <div class="col-md-2 header address hidden-md hidden-lg">
-        <addressmobile><strong>Wagner Murray Archictects, P.A.</strong>
+      <div class="col-xs-2 header address address-mobile hidden-md hidden-lg">
+        <address><strong>Wagner Murray Archictects, P.A.</strong>
           601 S. Cedar St., Studio 101
           Charlotte, NC 28202<br>
-          (704) 555-5555</addressmobile>
+          (704) 555-5555</address>
       </div>
     </div>
