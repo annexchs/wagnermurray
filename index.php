@@ -16,7 +16,7 @@
     
     <?php if (in_category('public-spaces') && in_category('featured-ps')) : ?>
         <?php if ($count<1) : ?>
-          <div class="public-spaces col-md-2 featured-project hidden-sm">
+          <div class="public-spaces col-md-2 featured-project hidden-sm hidden-xs">
             <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
             <a href="<?php the_permalink() ?>"><div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"><div class="title"><?php the_title(); ?></div></div></a>
           </div>
@@ -28,7 +28,7 @@
     <?php if (in_category('public-spaces') && !in_category('featured-ps')) : ?>
       <?php $count++; if ($count<8) : ?>
         <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
-          <div class="public-spaces col-md-1 regular-project hidden-sm">
+          <div class="public-spaces col-md-1 regular-project hidden-sm hidden-xs">
             <a href="<?php the_permalink() ?>">
               <div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)">
                 <div class="title"><?php the_title(); ?></div>
@@ -67,7 +67,7 @@
     <?php if (in_category('sports')) : ?>
       <?php if (in_category('featured-sports')) : ?>
         <?php if ($count<1) : ?>
-          <div class="sports col-md-2 featured-project hidden-sm">
+          <div class="sports col-md-2 featured-project hidden-sm hidden-xs">
             <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
             <a href="<?php the_permalink() ?>"><div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"><div class="title"><?php the_title(); ?></div></div></a>
           </div>
@@ -79,7 +79,7 @@
     <?php if (in_category('sports') && !in_category('featured-sports')) : ?>
       <?php $count++; if ($count<8) : ?>
         <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
-          <div class="sports col-md-1 regular-project hidden-sm">
+          <div class="sports col-md-1 regular-project hidden-sm hidden-xs">
             <a href="<?php the_permalink() ?>">
               <div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)">
                 <div class="title"><?php the_title(); ?></div>
@@ -117,7 +117,7 @@
     <?php if (in_category('commercial')) : ?>
       <?php if (in_category('featured-commercial')) : ?>
         <?php if ($count<1) : ?>
-          <div class="commercial col-md-2 featured-project hidden-sm">
+          <div class="commercial col-md-2 featured-project hidden-sm hidden-xs">
             <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
             <a href="<?php the_permalink() ?>"><div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"><div class="title"><?php the_title(); ?></div></div></a>
           </div>
@@ -129,7 +129,7 @@
     <?php if (in_category('commercial') && !in_category('featured-commercial')) : ?>
       <?php $count++; if ($count<8) : ?>
         <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
-          <div class="commercial col-md-1 regular-project hidden-sm">
+          <div class="commercial col-md-1 regular-project hidden-sm hidden-xs">
             <a href="<?php the_permalink() ?>">
               <div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)">
                 <div class="title"><?php the_title(); ?></div>
@@ -169,7 +169,7 @@
     <?php if (in_category('retail')) : ?>
       <?php if (in_category('featured-retail')) : ?>
         <?php if ($count<1) : ?>
-          <div class="retail col-md-2 featured-project hidden-sm">
+          <div class="retail col-md-2 featured-project hidden-sm hidden-xs">
             <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
             <a href="<?php the_permalink() ?>"><div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"><div class="title"><?php the_title(); ?></div></div></a>
           </div>
@@ -181,7 +181,7 @@
     <?php if (in_category('retail') && !in_category('featured-retail')) : ?>
       <?php $count++; if ($count<8) : ?>
         <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
-          <div class="retail col-md-1 regular-project hidden-sm">
+          <div class="retail col-md-1 regular-project hidden-sm hidden-xs">
             <a href="<?php the_permalink() ?>">
               <div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)">
                 <div class="title"><?php the_title(); ?></div>
@@ -220,7 +220,7 @@
     <?php if (in_category('restaurants')) : ?>
       <?php if (in_category('featured-restaurants')) : ?>
         <?php if ($count<1) : ?>
-          <div class="restaurant col-md-2 featured-project hidden-sm">
+          <div class="restaurant col-md-2 featured-project hidden-sm hidden-xs">
             <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
             <a href="<?php the_permalink() ?>"><div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"><div class="title"><?php the_title(); ?></div></div></a>
           </div>
@@ -232,7 +232,7 @@
     <?php if (in_category('restaurants') && !in_category('featured-restaurants')) : ?>
       <?php $count++; if ($count<8) : ?>
         <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
-          <div class="restaurant col-md-1 regular-project hidden-sm">
+          <div class="restaurant col-md-1 regular-project hidden-sm hidden-xs">
             <a href="<?php the_permalink() ?>">
               <div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)">
                 <div class="title"><?php the_title(); ?></div>
@@ -271,7 +271,7 @@
     <?php if (in_category('civic')) : ?>
       <?php if (in_category('featured-civic')) : ?>
         <?php if ($count<1) : ?>
-          <div class="civic col-md-2 featured-project hidden-sm">
+          <div class="civic col-md-2 featured-project hidden-sm hidden-xs">
             <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
             <a href="<?php the_permalink() ?>"><div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"><div class="title"><?php the_title(); ?></div></div></a>
           </div>
@@ -283,7 +283,7 @@
     <?php if (in_category('civic') && !in_category('featured-civic')) : ?>
       <?php $count++; if ($count<8) : ?>
         <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
-          <div class="civic col-md-1 regular-project hidden-sm">
+          <div class="civic col-md-1 regular-project hidden-sm hidden-xs">
             <a href="<?php the_permalink() ?>">
               <div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)">
                 <div class="title"><?php the_title(); ?></div>
@@ -323,7 +323,7 @@
     <?php if (in_category('interiors')) : ?>
       <?php if (in_category('featured-interiors')) : ?>
         <?php if ($count<1) : ?>
-          <div class="interiors col-md-2 featured-project hidden-sm">
+          <div class="interiors col-md-2 featured-project hidden-sm hidden-xs">
             <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
             <a href="<?php the_permalink() ?>"><div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"><div class="title"><?php the_title(); ?></div></div></a>
           </div>
@@ -335,7 +335,7 @@
     <?php if (in_category('interiors') && !in_category('featured-interiors')) : ?>
       <?php $count++; if ($count<8) : ?>
         <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
-          <div class="interiors col-md-1 regular-project hidden-sm">
+          <div class="interiors col-md-1 regular-project hidden-sm hidden-xs">
             <a href="<?php the_permalink() ?>">
               <div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)">
                 <div class="title"><?php the_title(); ?></div>
@@ -374,7 +374,7 @@
     <?php if (in_category('conceptual')) : ?>
       <?php if (in_category('featured-conceptual')) : ?>
         <?php if ($count<1) : ?>
-          <div class="conceptual col-md-2 featured-project hidden-sm">
+          <div class="conceptual col-md-2 featured-project hidden-sm hidden-xs">
             <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
             <a href="<?php the_permalink() ?>"><div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"><div class="title"><?php the_title(); ?></div></div></a>
           </div>
@@ -386,7 +386,7 @@
     <?php if (in_category('conceptual') && !in_category('featured-conceptual')) : ?>
       <?php $count++; if ($count<8) : ?>
         <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
-          <div class="conceptual col-md-1 regular-project hidden-sm">
+          <div class="conceptual col-md-1 regular-project hidden-sm hidden-xs">
             <a href="<?php the_permalink() ?>">
               <div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)">
                 <div class="title"><?php the_title(); ?></div>
