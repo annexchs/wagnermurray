@@ -227,6 +227,11 @@ address {
 	text-align: right;
 }
 
+addressmobile {
+	line-height: 2em;
+	text-align: center;
+}
+
 .navi {
 	line-height: 2em;
 	font-weight: bold;
