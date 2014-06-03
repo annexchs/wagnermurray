@@ -227,8 +227,7 @@ address {
 	text-align: right;
 }
 
-addressmobile {
-	line-height: 2em;
+.address-mobile {
 	text-align: center;
 }
 

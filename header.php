@@ -54,10 +54,10 @@
           Charlotte, NC 28202<br>
           (704) 555-5555</address>
       </div>
-      <div class="col-md-2 header address hidden-md hidden-lg">
-        <addressmobile><strong>Wagner Murray Archictects, P.A.</strong>
+      <div class="col-md-2 header address address-mobile hidden-md hidden-lg">
+        <address><strong>Wagner Murray Archictects, P.A.</strong>
           601 S. Cedar St., Studio 101
           Charlotte, NC 28202<br>
-          (704) 555-5555</addressmobile>
+          (704) 555-5555</address>
       </div>
     </div>
