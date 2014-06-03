@@ -128,6 +128,11 @@ a.sports:hover {
 	height: 100%;
 }
 
+a.commercial:hover {
+  color: #4D1E8B;
+  text-decoration: underline;
+}
+
 .commercial .project {
 	background: #4D1E8B;
 		height: 100%;
@@ -141,6 +146,11 @@ a.sports:hover {
 .restaurant {
 	color: #81008B;
 	height: 100%;
+}
+
+a.restaurant:hover {
+  color: #81008B;
+  text-decoration: underline;
 }
 
 .restaurant .project {
@@ -158,6 +168,11 @@ a.sports:hover {
 	height: 100%;
 }
 
+a.retail:hover {
+  color: #201B90;
+  text-decoration: underline;
+}
+
 .retail .project {
 	background: #201B90;
 		height: 100%;
@@ -171,6 +186,11 @@ a.sports:hover {
 .civic {
 	color: #079AD7;
 	height: 100%;
+}
+
+a.civic:hover {
+  color: #079AD7;
+  text-decoration: underline;
 }
 
 .civic .project {
@@ -188,6 +208,11 @@ a.sports:hover {
 	height: 100%;
 }
 
+a.interiors:hover {
+  color: #1D961C;
+  text-decoration: underline;
+}
+
 .interiors .project {
 	background: #1D961C;
 		height: 100%;
@@ -201,6 +226,11 @@ a.sports:hover {
 .conceptual {
 	color: #E5CE21;
 	height: 100%;
+}
+
+a.conceptual:hover {
+  color: #E5CE21;
+  text-decoration: underline;
 }
 
 .conceptual .project {
