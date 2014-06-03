@@ -10,7 +10,7 @@
 			
 			<div class="row">
 			
-				<div id="blog-front" class="col-md-6 col-md-offset-2" role="main">
+				<div id="blog-front" class="col-sm-7 col-md-6 col-md-offset-2 col-sm-offset-1" role="main">
 				
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
@@ -22,19 +22,21 @@
 							
 						</header>
 							
-						<section class="post_content">
+						<section id="post_content">
 						
-							<?php the_post_thumbnail( 'wpbs-featured' ); ?>
+							<?php the_post_thumbnail( 'wpbs-featured', array('class' => 'img-responsive') ); ?>
 						
-							<?php the_excerpt(); ?>
+							<?php the_content('Read more...'); ?>
 					
 						</section> <!-- end article section -->
 											
 						<footer>
-						  <p class="meta"><?php _e("Posted", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_time(); ?></time> <?php _e("by", "wpbootstrap"); ?> <?php the_author_posts_link(); ?> <span class="amp">&</span> <?php _e("filed under", "wpbootstrap"); ?> <?php the_category(', '); ?>.</p>
+						  <h6 class="date uppercase"><?php _e("Posted", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_time(); ?></time> <?php _e("by", "wpbootstrap"); ?> <?php the_author_posts_link(); ?></h6>
 						</footer> <!-- end article footer -->
 					
 					</article> <!-- end article -->
+					
+					<hr>
 					
 					<?php endwhile; ?>	
 					
@@ -66,6 +68,8 @@
 					</article>
 					
 					<?php endif; ?>
+					
+					
 			
 				</div> <!-- end #main -->
         
