@@ -14,11 +14,10 @@
           overflow:hidden;
         }
       </style>
-      <h6 class="uppercase" >
+      <h6 class="uppercase category-title-block" >
       <?php $catCount = 0; foreach((get_the_Category()) as $category) { ?>
-        <span class="<?php echo $category->slug ?>"><?php echo $category->name ?></span>
+        <span><a class="<?php echo $category->slug ?>" href="<?php echo esc_url(get_category_link(get_cat_ID($category->ID))); ?>"><?php echo $category->name ?></a></span>
       <?php $catCount += 1; ?>
-        <span class="header">&nbsp;|&nbsp;</span>
       <?php }; ?>
       </h6>
 
