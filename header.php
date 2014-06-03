@@ -18,6 +18,7 @@
 
   <!-- Cloud.Typography -->
   <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6752452/618464/css/fonts.css" />
+  <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
 
   <?php wp_head(); ?>
 </head>
