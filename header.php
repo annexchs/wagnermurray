@@ -40,17 +40,23 @@
       $headerPost = new WP_Query();
       $headerPost->query('showposts=1&cat=18');
       while ($headerPost->have_posts()) : $headerPost->the_post(); ?>
-      <div class="col-md-2 header tease">
+      <div class="col-md-2 header tease hidden-xs hidden-sm">
         <a href="#"><h5><strong>LATEST FROM THE BLOG</strong></h5></a>
         <a href="<?php the_permalink(); ?>"><h6 class="homeheadline"><em><?php the_title(); ?></em></h6></a>
         <div class="date">POSTED <?php the_date() ?></div>
         <a href="#"><p><?php the_excerpt(); ?></p></a>
       </div>
       <?php endwhile; ?>
-      <div class="col-md-2 header address">
+      <div class="col-md-2 header address hidden-xs hidden-sm">
         <address><strong>Wagner Murray Archictects, P.A.</strong>
           601 S. Cedar St., Studio 101
           Charlotte, NC 28202<br>
           (704) 555-5555</address>
+      </div>
+      <div class="col-md-2 header address hidden-md hidden-lg">
+        <addressmobile><strong>Wagner Murray Archictects, P.A.</strong>
+          601 S. Cedar St., Studio 101
+          Charlotte, NC 28202<br>
+          (704) 555-5555</addressmobile>
       </div>
     </div>
