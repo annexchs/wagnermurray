@@ -39,7 +39,7 @@
       </div>
       <?php
       $headerPost = new WP_Query();
-      $headerPost->query('showposts=1&cat=18');
+      $headerPost->query('showposts=1&cat=2');
       while ($headerPost->have_posts()) : $headerPost->the_post(); ?>
       <div class="col-md-2 header tease hidden-xs hidden-sm">
         <a href="#"><h5><strong>LATEST FROM THE BLOG</strong></h5></a>
