@@ -90,7 +90,7 @@ a {
 
 a.public-spaces:hover {
 	color: #CC3E00;
-  
+  text-decoration: underline;
 }
 
 .public-spaces .project {
@@ -103,9 +103,14 @@ a.public-spaces:hover {
 		height: 100%;
 }
 
-.sports, sports a:hover {
+.sports{
 	color: #911C00;
 	height: 100%;
+}
+
+a.sports:hover {
+	color: #911C00;
+  text-decoration: underline;
 }
 
 .sports .project {
