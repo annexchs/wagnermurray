@@ -9,39 +9,7 @@
         </title><!-- Bootstrap -->
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript">
-  
-  function retinaFilename(originalFilename) {
-  
-    var suffix = originalFilename.substr(-4);
-    var filename = originalFilename.substr(0, originalFilename.length - 4);
-    filename = filename + "@2x" + suffix;
-
-    return filename;
-  }
-  
-  function replaceImageWithRetina(image) {
-  
-    var newFilename = retinaFilename(image.src);
-    image.src = newFilename;
-  }
  
-  function replaceAllImagesWithRetinaVersions() {
-  
-    var images = document.images;
-
-    for (var i = 0; i < images.length; i++) {
-      replaceImageWithRetina(images[i]);
-     }
-  }
-  
-  function replaceWithRetinaGraphicsIfNeeded() {
-    if (window.devicePixelRatio == 2) {
-      replaceAllImagesWithRetinaVersions();
-    }
-  }
-  
-  </script>
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
       	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -53,7 +21,7 @@
 
   <?php wp_head(); ?>
 </head>
- <body onload="replaceWithRetinaGraphicsIfNeeded()">
+ <body>
   <div class="container">
     <div class="row">
       <div class="col-md-2 header logo">
