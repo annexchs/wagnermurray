@@ -83,9 +83,14 @@ a {
 	height: 15.571em !important;
 }
 
-.public-spaces, a.public-spaces:hover {
+.public-spaces {
 	color: #CC3E00;
 	height: 100%;
+}
+
+a.public-spaces:hover {
+	color: #CC3E00;
+  
 }
 
 .public-spaces .project {
@@ -552,7 +557,7 @@ color: #FFF;
 
 .category-title-block span{
   padding-right: 1em;
-  padding-left: 1em;
+  padding-left: 0.75em;
   border-right: 2px solid #ccc;
 }
 
