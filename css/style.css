@@ -98,6 +98,10 @@ a.public-spaces:hover {
 		height: 100%;
 }
 
+.public-spaces .image-hider {
+	background: #CC3E00;
+}
+
 .public-spaces .category-block {
 	border: 0.25em solid #CC3E00;
 		height: 100%;
@@ -519,8 +523,19 @@ address {
   transition: all 0.3s ease;
 }
 
+
 .featured-project .bkg-responsive, .featured-project .bkg-responsive:hover {
-  border: 0;
+  opacity: 1;
+}
+
+.image-hider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  border-right: 5px solid white;
 }
 
 .bkg-responsive {
@@ -529,47 +544,44 @@ address {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0;
-  position: relative;
   overflow: hidden;
+  position: absolute;
+  z-index: 2;
+  transition: opacity 0.3s ease;
+  top: 0;
+  left: 0;
+  border-right: 5px solid white;
 }
 
-#public-spaces .regular-project .bkg-responsive {
-  background-position: -100%;
-  background-color: #CC3E00;
+.regular-project .bkg-responsive {
+  opacity: 0;
 }
 
-#sports .regular-project .bkg-responsive {
-  background-position: -100%;
+#sports .image-hider {
   background-color: #911C00;
 }
 
-#commercial .regular-project .bkg-responsive {
-  background-position: -100%;
+#commercial .image-hider {
   background-color: #4D1E8B;
 }
 
-#retail .regular-project .bkg-responsive {
-  background-position: -100%;
+#retail .image-hider {
   background-color: #201B90;
 }
 
-#restaurant .regular-project .bkg-responsive {
-  background-position: -100% -100%;
+#restaurant .image-hider {
   background-color: #81008B;
 }
 
-#civic .regular-project .bkg-responsive {
-  background-position: -100%;
+#civic .image-hider {
   background-color: #079AD7;
 }
 
-#interiors .regular-project .bkg-responsive {
-  background-position: -100%;
+#interiors .image-hider {
   background-color: #1D961C;
 }
 
-#conceptual .regular-project .bkg-responsive {
-  background-position: -100%;
+#conceptual .image-hider {
   background-color: #E5CE21;
 }
 
