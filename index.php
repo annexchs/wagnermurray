@@ -8,7 +8,10 @@
   <div class="row category-row" id="public-spaces">
     
     <div class="col-md-2 public-spaces">
-      <div class="category-block">Public Spaces</div>
+      <div class="category-block">
+        <span class="category-label-right" >Public Spaces</span>
+        <img class="img-responsive" src="wp-content/themes/wagner-murray/images/parkspublicdesign-ready.png">
+      </div>
     </div>
   
   <?php $count = 0; ?>
@@ -109,7 +112,10 @@
   <div class="row category-row" id="commercial">
     
     <div class="col-md-2 commercial">
-      <div class="category-block">commercial</div>
+      <div class="category-block">
+        <span class="category-label-left-bottom">commercial</span>
+        <img class="img-responsive" src="wp-content/themes/wagner-murray/images/CommercialOfficeDesign-ready.png">
+      </div>
     </div>
   <?php $count = 0; ?>
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -160,7 +166,10 @@
   <div class="row category-row" id="retail">
     
     <div class="col-md-2 retail">
-      <div class="category-block">retail</div>
+      <div class="category-block">
+        <span class="category-label-left">retail</span>
+        <img class="img-responsive" src="wp-content/themes/wagner-murray/images/RetailDesign-ready.png">
+      </div>
     </div>
   
   <?php $count = 0; ?>
@@ -211,7 +220,10 @@
   <div class="row category-row" id="restaurant">
     
     <div class="col-md-2 restaurant">
-      <div class="category-block">restaurant</div>
+      <div class="category-block">
+        <span class="category-label-left">restaurant</span>
+        <img class="img-responsive" src="wp-content/themes/wagner-murray/images/RestaurantDesign-ready.png">
+      </div>
     </div>
   
   <?php $count = 0; ?>
@@ -314,7 +326,10 @@
   <div class="row category-row" id="interiors">
     
     <div class="col-md-2 interiors">
-      <div class="category-block">interiors</div>
+      <div class="category-block">
+        <span class="category-label-left">interiors</span>
+        <img class="img-responsive" src="wp-content/themes/wagner-murray/images/interiordesign-ready.png">
+      </div>
     </div>
   
   <?php $count = 0; ?>
