@@ -14,7 +14,7 @@
         <div class="col-md-10 wrapper" style="background-image:url(<?php echo $img_src[0] ?>);">
           <div class="shadow">
             <h1><?php the_title(); ?></h1>
-            <h6><?php _e("Posted", "wpbootstrap"); ?> <?php echo the_time('Y-m-j'); ?> <?php _e("by", "wpbootstrap"); ?> <span class="bold"><?php the_author(); ?></span></h6>
+            <h6><?php _e("Posted", "wpbootstrap"); ?> <?php echo the_time('F j, Y'); ?> <?php _e("by", "wpbootstrap"); ?> <span class="bold"><?php the_author(); ?></span></h6>
           </div>
         </div>
       </div>
@@ -22,7 +22,7 @@
       <div class="row category-row" id="public-spaces projects">
         <div class="col-md-10 wrapper-black">
             <h1><?php the_title(); ?></h1>
-            <h6><?php _e("Posted", "wpbootstrap"); ?> <?php echo the_time('Y-m-j'); ?> <?php _e("by", "wpbootstrap"); ?> <span class="bold"><?php the_author(); ?></span></h6>
+            <h6><?php _e("Posted", "wpbootstrap"); ?> <?php echo the_time('F j, Y'); ?> <?php _e("by", "wpbootstrap"); ?> <span class="bold"><?php the_author(); ?></span></h6>
         </div>
       </div>
       <?php endif; ?>
