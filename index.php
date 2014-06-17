@@ -21,7 +21,7 @@
         <?php if ($count<1) : ?>
           <div class="public-spaces col-md-2 featured-project hidden-sm hidden-xs">
             <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
-            <a href="<?php the_permalink() ?>"><div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"><div class="title"><?php the_title(); ?></div></div></a>
+            <a href="<?php the_permalink() ?>"><div class="image-hider"></div><div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"><div class="title"><?php the_title(); ?></div></div></a>
           </div>
         <?php $count++; ?>
   <?php endif; endif; endwhile; endif; ?>
@@ -33,6 +33,7 @@
         <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
           <div class="public-spaces col-md-1 regular-project hidden-sm hidden-xs">
             <a href="<?php the_permalink() ?>">
+              <div class="image-hider"></div>
               <div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)">
                 <div class="title"><?php the_title(); ?></div>
               </div>
@@ -72,7 +73,7 @@
         <?php if ($count<1) : ?>
           <div class="sports col-md-2 featured-project hidden-sm hidden-xs">
             <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
-            <a href="<?php the_permalink() ?>"><div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"><div class="title"><?php the_title(); ?></div></div></a>
+            <a href="<?php the_permalink() ?>"><div class="image-hider"></div><div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"><div class="title"><?php the_title(); ?></div></div></a>
           </div>
         <?php $count++; ?>
       <?php endif; endif; endif; endwhile; endif; ?>
@@ -84,6 +85,7 @@
         <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
           <div class="sports col-md-1 regular-project hidden-sm hidden-xs">
             <a href="<?php the_permalink() ?>">
+              <div class="image-hider"></div>
               <div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)">
                 <div class="title"><?php the_title(); ?></div>
               </div>
@@ -125,7 +127,7 @@
         <?php if ($count<1) : ?>
           <div class="commercial col-md-2 featured-project hidden-sm hidden-xs">
             <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
-            <a href="<?php the_permalink() ?>"><div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"><div class="title"><?php the_title(); ?></div></div></a>
+            <a href="<?php the_permalink() ?>"><div class="image-hider"></div><div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"><div class="title"><?php the_title(); ?></div></div></a>
           </div>
         <?php $count++; ?>
       <?php endif; endif; endif; endwhile; endif; ?>
@@ -137,6 +139,7 @@
         <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
           <div class="commercial col-md-1 regular-project hidden-sm hidden-xs">
             <a href="<?php the_permalink() ?>">
+              <div class="image-hider"></div>
               <div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)">
                 <div class="title"><?php the_title(); ?></div>
               </div>
@@ -180,7 +183,7 @@
         <?php if ($count<1) : ?>
           <div class="retail col-md-2 featured-project hidden-sm hidden-xs">
             <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
-            <a href="<?php the_permalink() ?>"><div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"><div class="title"><?php the_title(); ?></div></div></a>
+            <a href="<?php the_permalink() ?>"><div class="image-hider"></div><div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"><div class="title"><?php the_title(); ?></div></div></a>
           </div>
         <?php $count++; ?>
       <?php endif; endif; endif; endwhile; endif; ?>
@@ -192,6 +195,7 @@
         <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
           <div class="retail col-md-1 regular-project hidden-sm hidden-xs">
             <a href="<?php the_permalink() ?>">
+              <div class="image-hider"></div>
               <div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)">
                 <div class="title"><?php the_title(); ?></div>
               </div>
@@ -234,7 +238,7 @@
         <?php if ($count<1) : ?>
           <div class="restaurant col-md-2 featured-project hidden-sm hidden-xs">
             <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
-            <a href="<?php the_permalink() ?>"><div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"><div class="title"><?php the_title(); ?></div></div></a>
+            <a href="<?php the_permalink() ?>"><div class="image-hider"></div><div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"><div class="title"><?php the_title(); ?></div></div></a>
           </div>
         <?php $count++; ?>
       <?php endif; endif; endif; endwhile; endif; ?>
@@ -246,6 +250,7 @@
         <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
           <div class="restaurant col-md-1 regular-project hidden-sm hidden-xs">
             <a href="<?php the_permalink() ?>">
+              <div class="image-hider"></div>
               <div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)">
                 <div class="title"><?php the_title(); ?></div>
               </div>
@@ -285,7 +290,7 @@
         <?php if ($count<1) : ?>
           <div class="civic col-md-2 featured-project hidden-sm hidden-xs">
             <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
-            <a href="<?php the_permalink() ?>"><div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"><div class="title"><?php the_title(); ?></div></div></a>
+            <a href="<?php the_permalink() ?>"><div class="image-hider"></div><div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"><div class="title"><?php the_title(); ?></div></div></a>
           </div>
         <?php $count++; ?>
       <?php endif; endif; endif; endwhile; endif; ?>
@@ -297,6 +302,7 @@
         <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
           <div class="civic col-md-1 regular-project hidden-sm hidden-xs">
             <a href="<?php the_permalink() ?>">
+              <div class="image-hider"></div>
               <div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)">
                 <div class="title"><?php the_title(); ?></div>
               </div>
@@ -340,7 +346,7 @@
         <?php if ($count<1) : ?>
           <div class="interiors col-md-2 featured-project hidden-sm hidden-xs">
             <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
-            <a href="<?php the_permalink() ?>"><div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"><div class="title"><?php the_title(); ?></div></div></a>
+            <a href="<?php the_permalink() ?>"><div class="image-hider"></div><div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"><div class="title"><?php the_title(); ?></div></div></a>
           </div>
         <?php $count++; ?>
       <?php endif; endif; endif; endwhile; endif; ?>
@@ -352,6 +358,7 @@
         <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
           <div class="interiors col-md-1 regular-project hidden-sm hidden-xs">
             <a href="<?php the_permalink() ?>">
+              <div class="image-hider"></div>
               <div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)">
                 <div class="title"><?php the_title(); ?></div>
               </div>
@@ -391,7 +398,7 @@
         <?php if ($count<1) : ?>
           <div class="conceptual col-md-2 featured-project hidden-sm hidden-xs">
             <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
-            <a href="<?php the_permalink() ?>"><div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"><div class="title"><?php the_title(); ?></div></div></a>
+            <a href="<?php the_permalink() ?>"><div class="image-hider"></div><div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"><div class="title"><?php the_title(); ?></div></div></a>
           </div>
         <?php $count++; ?>
       <?php endif; endif; endif; endwhile; endif; ?>
@@ -403,6 +410,7 @@
         <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
           <div class="conceptual col-md-1 regular-project hidden-sm hidden-xs">
             <a href="<?php the_permalink() ?>">
+              <div class="image-hider"></div>
               <div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)">
                 <div class="title"><?php the_title(); ?></div>
               </div>
