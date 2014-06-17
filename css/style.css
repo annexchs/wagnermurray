@@ -632,6 +632,10 @@ color: #FFF;
   border-right: none;
 }
 
+.category-title-block span:only-child{
+  border-right: none;
+}
+
 .category-title-block .featured-ps, .category-title-block .featured-civic, .category-title-block .featured-commercial, .category-title-block .featured-conceptual, .category-title-block .featured-interiors, .category-title-restaurants .featured-retail, .category-title-block .featured-sports {
   display: none;
 }
