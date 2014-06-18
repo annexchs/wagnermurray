@@ -20,6 +20,10 @@
       <?php $catCount += 1; ?>
       <?php }; ?>
       </h6>
+      
+      <script type="text/javascript">
+        $(".category-title-block span:contains('featured')").remove();
+      </script>
 
     </div>
   </div>
