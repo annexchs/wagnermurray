@@ -45,7 +45,7 @@
         <a href="<?php the_permalink(); ?>"><h5><strong>LATEST FROM THE BLOG</strong></h5></a>
         <a href="<?php the_permalink(); ?>"><h6 class="homeheadline"><em><?php the_title(); ?></em></h6></a>
         <div class="date">POSTED <?php the_date() ?></div>
-        <a href="#"><p><?php the_excerpt(); ?></p></a>
+        <a href="<?php the_permalink(); ?>"><p><?php the_excerpt(); ?></p></a>
       </div>
       <?php endwhile; ?>
       <div class="col-xs-2 header address">
