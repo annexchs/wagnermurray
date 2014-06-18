@@ -33,9 +33,9 @@
       <div class="col-xs-2 header navi">
         <ul class="list-unstyled">
           <li><a href="?page_id=194">PROJECTS</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">BLOG</a></li>
-          <li><a href="#">CONTACT</a></li></ul>
+          <li><a href="?page_id=120">ABOUT</a></li>
+          <li><a href="?cat=2">BLOG</a></li>
+          <li><a href="?page_id=236">CONTACT</a></li></ul>
       </div>
       <?php
       $headerPost = new WP_Query();
