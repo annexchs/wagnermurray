@@ -32,7 +32,7 @@
       </div>
       <div class="col-xs-2 header navi">
         <ul class="list-unstyled">
-          <li><a href="#">PROJECTS</a></li>
+          <li><a href="?page_id=194">PROJECTS</a></li>
           <li><a href="#">ABOUT</a></li>
           <li><a href="#">BLOG</a></li>
           <li><a href="#">CONTACT</a></li></ul>
