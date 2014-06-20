@@ -29,7 +29,7 @@
   </div>
   <div class="row category-row" id="public-spaces projects">
     <div class="col-md-10 featured-project bottomfix">
-      <div id="project-images" class="carousel slide" data-ride="carousel" data-interval="5000">
+      <div id="project-images" class="carousel slide" data-ride="carousel" data-interval="4500">
         <ol class="carousel-indicators">
 
           <?php
@@ -39,6 +39,7 @@
               'post_status' => 'inherit',
               'post_type' => 'attachment',
               'post_mime_type' => 'image',
+              'exclude' => get_post_thumbnail_id()
             ));
             $imgCount = 0;
             foreach($images as $image) {
