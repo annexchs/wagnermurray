@@ -27,7 +27,7 @@
 
     </div>
   </div>
-  <div class="row category-row" id="public-spaces projects">
+  <div class="row" id="public-spaces projects">
     <div class="col-md-10 featured-project bottomfix">
       <div id="project-images" class="carousel slide" data-ride="carousel" data-interval="4500">
         <ol class="carousel-indicators">
