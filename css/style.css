@@ -615,11 +615,8 @@ color: #FFF;
 
 .featured-project .title {
   opacity: 1;
-  width: 100%;
-}
-
-.category-title-text {
   width: 18.5rem;
+  overflow: hidden;
 }
 
 .category-title-block span{
