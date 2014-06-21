@@ -21,7 +21,7 @@
         <?php if ($count<1) : ?>
           <div class="public-spaces col-md-2 featured-project hidden-sm hidden-xs">
             <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
-            <a href="<?php the_permalink() ?>"><div class="image-hider"></div><div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"><div class="title"><?php the_title(); ?></div></div></a>
+            <a class="clickable" href="<?php the_permalink() ?>"><div class="image-hider"></div><div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"><div class="title"><?php the_title(); ?></div></div></a>
           </div>
         <?php $count++; ?>
   <?php endif; endif; endwhile; endif; ?>
@@ -32,7 +32,7 @@
       <?php $count++; if ($count<8) : ?>
         <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
           <div class="public-spaces col-md-1 regular-project hidden-sm hidden-xs">
-            <a href="<?php the_permalink() ?>">
+            <a class="clickable" href="<?php the_permalink() ?>">
               <div class="image-hider"></div>
               <div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)">
                 <div class="title"><?php the_title(); ?></div>
@@ -45,6 +45,11 @@
   
   <script type="text/javascript">
     $( ".public-spaces" ).hover(function() {
+      if ('ontouchstart' in window || navigator.msMaxTouchPoints) {
+        $("a").one("click", false, function(e){
+          e.preventDefault();
+        });
+      }
       if ( $(this).hasClass("regular-project") ) {
         var featWidth = $( "#col-2-const" ).width();
         var regWidth = $( "#col-1-const").width();
@@ -54,8 +59,7 @@
         $( ".public-spaces.featured-project" ).addClass("regular-project");
         $( ".public-spaces.featured-project" ).removeClass("featured-project");
         $( this ).addClass("featured-project");
-        $( this ).after("<span id=\"mobile-hack\"></span>");
-        $("#mobile-hack").remove();
+        $( this ).append("<span id=\"mobile-hack\"></span>");
         //$( this ).addClass("col-md-2");
       }
     });
@@ -99,6 +103,11 @@
   
   <script type="text/javascript">
     $( ".sports" ).hover(function() {
+      if ('ontouchstart' in window || navigator.msMaxTouchPoints) {
+        $("a").one("click", false, function(e){
+          e.preventDefault();
+        });
+      }
       if ( $(this).hasClass("regular-project") ) {
         var featWidth = $( "#col-2-const" ).width();
         var regWidth = $( "#col-1-const").width();
@@ -153,6 +162,11 @@
   
   <script type="text/javascript">
     $( ".commercial" ).hover(function() {
+      if ('ontouchstart' in window || navigator.msMaxTouchPoints) {
+        $("a").one("click", false, function(e){
+          e.preventDefault();
+        });
+      }
       if ( $(this).hasClass("regular-project") ) {
         var featWidth = $( "#col-2-const" ).width();
         var regWidth = $( "#col-1-const").width();
@@ -209,6 +223,11 @@
   
   <script type="text/javascript">
     $( ".retail" ).hover(function() {
+      if ('ontouchstart' in window || navigator.msMaxTouchPoints) {
+        $("a").one("click", false, function(e){
+          e.preventDefault();
+        });
+      }
       if ( $(this).hasClass("regular-project") ) {
         var featWidth = $( "#col-2-const" ).width();
         var regWidth = $( "#col-1-const").width();
@@ -264,6 +283,11 @@
   
   <script type="text/javascript">
     $( ".restaurant" ).hover(function() {
+      if ('ontouchstart' in window || navigator.msMaxTouchPoints) {
+        $("a").one("click", false, function(e){
+          e.preventDefault();
+        });
+      }
       if ( $(this).hasClass("regular-project") ) {
         var featWidth = $( "#col-2-const" ).width();
         var regWidth = $( "#col-1-const").width();
@@ -316,6 +340,11 @@
   
   <script type="text/javascript">
     $( ".civic" ).hover(function() {
+      if ('ontouchstart' in window || navigator.msMaxTouchPoints) {
+        $("a").one("click", false, function(e){
+          e.preventDefault();
+        });
+      }
       if ( $(this).hasClass("regular-project") ) {
         var featWidth = $( "#col-2-const" ).width();
         var regWidth = $( "#col-1-const").width();
@@ -371,6 +400,11 @@
   
   <script type="text/javascript">
     $( ".interiors" ).hover(function() {
+      if ('ontouchstart' in window || navigator.msMaxTouchPoints) {
+        $("a").one("click", false, function(e){
+          e.preventDefault();
+        });
+      }
       if ( $(this).hasClass("regular-project") ) {
         var featWidth = $( "#col-2-const" ).width();
         var regWidth = $( "#col-1-const").width();
@@ -424,6 +458,11 @@
   
   <script type="text/javascript">
     $( ".conceptual" ).hover(function() {
+      if ('ontouchstart' in window || navigator.msMaxTouchPoints) {
+        $("a").one("click", false, function(e){
+          e.preventDefault();
+        });
+      }
       if ( $(this).hasClass("regular-project") ) {
         var featWidth = $( "#col-2-const" ).width();
         var regWidth = $( "#col-1-const").width();
