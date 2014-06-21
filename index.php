@@ -44,8 +44,7 @@
   
   
   <script type="text/javascript">
-    $( ".public-spaces" ).hover(function(e) {
-      e.preventDefault();
+    $( ".public-spaces" ).hover(function() {
       if ( $(this).hasClass("regular-project") ) {
         var featWidth = $( "#col-2-const" ).width();
         var regWidth = $( "#col-1-const").width();
@@ -55,6 +54,8 @@
         $( ".public-spaces.featured-project" ).addClass("regular-project");
         $( ".public-spaces.featured-project" ).removeClass("featured-project");
         $( this ).addClass("featured-project");
+        $( this ).after("<span id=\"mobile-hack\"></span>");
+        $("#mobile-hack").remove();
         //$( this ).addClass("col-md-2");
       }
     });
