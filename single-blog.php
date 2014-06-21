@@ -10,7 +10,7 @@
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			<?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
 			<?php if ($img_src != null) : ?>
-			<div class="row category-row" id="public-spaces projects">
+			<div class="row" id="public-spaces projects">
         <div class="col-md-10 wrapper" style="background-image:url(<?php echo $img_src[0] ?>);">
           <div class="shadow">
             <h1><?php the_title(); ?></h1>
