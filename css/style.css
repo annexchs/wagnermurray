@@ -615,7 +615,8 @@ color: #FFF;
 
 .featured-project .title {
   opacity: 1;
-  min-width: 100%;
+  max-width: 18.5rem;
+  min-width: 200px;
   overflow: hidden;
 }
 
