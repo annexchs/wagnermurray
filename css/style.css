@@ -680,3 +680,13 @@ a.carousel-control{
 .carousel-control .glyphicon-chevron-left {
   left: 50%;
 }
+
+.site-logo {
+ /*max-height: 250px;*/
+}
+
+@media (max-width:768px) {
+  .menu-nav-list{
+    text-align: center;
+  }
+}

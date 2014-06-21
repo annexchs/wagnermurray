@@ -19,7 +19,7 @@
         </div>
       </div>
       <?php else : ?>
-      <div class="row category-row" id="public-spaces projects">
+      <div class="row" id="public-spaces projects">
         <div class="col-md-10 wrapper-black">
             <h1><?php the_title(); ?></h1>
             <h6><?php _e("Posted", "wpbootstrap"); ?> <?php echo the_time('F j, Y'); ?> <?php _e("by", "wpbootstrap"); ?> <span class="bold"><?php the_author(); ?></span></h6>
