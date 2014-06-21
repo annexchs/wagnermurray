@@ -4,9 +4,11 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Wagner Murray Architects, P.A. is the premier architecture firm in Charlotte, N.C." />
   <title>
       <?php bloginfo('name'); wp_title('&#124;'); ?>
         </title><!-- Bootstrap -->
+
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type='application/javascript' src='/js/fastclick.js'></script>
