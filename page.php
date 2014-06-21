@@ -8,7 +8,7 @@
           <h3 class="uppercase h4fix"><?php the_title(); ?></h3>
         </div>
       </div>
-      <div class="row category-row" id="public-spaces projects">
+      <div class="row" id="public-spaces projects">
         <div class="col-md-6 col-md-offset-2">
           <?php the_content(); ?>
         </div>
