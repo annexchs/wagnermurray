@@ -694,5 +694,7 @@ a.carousel-control{
     text-align: center;
   }
   
-
+  .wrapper h1, .wrapper h6 {
+    left: 5%;
+  }
 }
