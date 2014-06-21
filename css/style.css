@@ -28,7 +28,7 @@ h2 {
 h3 {
 	font-size: 1.5em;
 		color: #111111;
-		font-family: 'Ideal Sans A', 'Ideal Sans B'; font-weight: 600; font-style: normal;
+	font-family: 'Sentinel A', 'Sentinel B'; font-weight: 700; font-style: normal;
 
 
 }
@@ -36,7 +36,7 @@ h3 {
 h4 {
 	font-size: 1.25em;
 	font-style: italic;
-		color: #111111;
+		color: #AAAAAA;
 
 }
 
@@ -53,11 +53,17 @@ h6 {
 
 }
 
-h7 {
-		font-size: 90%;
-			color: #CCCCCC;
-			font-family: 'Ideal Sans small caps A', 'Ideal Sans small caps B'; font-weight: 400; font-style: normal;
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
+  color: #111;
+}
 
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{
+  color: #555;
+  text-decoration: none;
+}
+
+a {
+  color: #5E6D8C;
 }
 
 .uppercase {
@@ -74,126 +80,170 @@ h7 {
 }
 
 .category-row {
-	height: 15.571em;
+	height: 15.571em !important;
 }
 
 .public-spaces {
-	color: orange;
+	color: #CC3E00;
 	height: 100%;
+}
+
+a.public-spaces:hover {
+	color: #CC3E00;
+  text-decoration: underline;
 }
 
 .public-spaces .project {
-	background: orange;
+	background: #CC3E00;
 		height: 100%;
+}
+
+.public-spaces .image-hider {
+	background: #CC3E00;
 }
 
 .public-spaces .category-block {
-	border: 0.25em solid orange;
+	border: 0.25em solid #CC3E00;
 		height: 100%;
 }
 
-.sports {
-	color: orangered;
+.sports{
+	color: #911C00;
 	height: 100%;
 }
 
+a.sports:hover {
+	color: #911C00;
+  text-decoration: underline;
+}
+
 .sports .project {
-	background: orangered;
+	background: #911C00;
 		height: 100%;
 }
 
 .sports .category-block {
-	border: 0.25em solid orangered;
+	border: 0.25em solid #911C00;
 		height: 100%;
 }
 
 .commercial {
-	color: violet;
+	color: #4D1E8B;
 	height: 100%;
 }
 
+a.commercial:hover {
+  color: #4D1E8B;
+  text-decoration: underline;
+}
+
 .commercial .project {
-	background: violet;
+	background: #4D1E8B;
 		height: 100%;
 }
 
 .commercial .category-block {
-	border: 0.25em solid violet;
+	border: 0.25em solid #4D1E8B;
 		height: 100%;
 }
 
 .restaurant {
-	color: blueviolet;
+	color: #81008B;
 	height: 100%;
 }
 
+a.restaurant:hover {
+  color: #81008B;
+  text-decoration: underline;
+}
+
 .restaurant .project {
-	background: blueviolet;
+	background: #81008B;
 		height: 100%;
 }
 
 .restaurant .category-block {
-	border: 0.25em solid blueviolet;
+	border: 0.25em solid #81008B;
 		height: 100%;
 }
 
 .retail {
-	color: blue;
+	color: #201B90;
 	height: 100%;
 }
 
+a.retail:hover {
+  color: #201B90;
+  text-decoration: underline;
+}
+
 .retail .project {
-	background: blue;
+	background: #201B90;
 		height: 100%;
 }
 
 .retail .category-block {
-	border: 0.25em solid blue;
+	border: 0.25em solid #201B90;
 		height: 100%;
 }
 
 .civic {
-	color: lightblue;
+	color: #079AD7;
 	height: 100%;
 }
 
+a.civic:hover {
+  color: #079AD7;
+  text-decoration: underline;
+}
+
 .civic .project {
-	background: lightblue;
+	background: #079AD7;
 		height: 100%;
 }
 
 .civic .category-block {
-	border: 0.25em solid lightblue;
+	border: 0.25em solid #079AD7;
 		height: 100%;
 }
 
 .interiors {
-	color: green;
+	color: #1D961C;
 	height: 100%;
 }
 
+a.interiors:hover {
+  color: #1D961C;
+  text-decoration: underline;
+}
+
 .interiors .project {
-	background: green;
+	background: #1D961C;
 		height: 100%;
 }
 
 .interiors .category-block {
-	border: 0.25em solid green;
+	border: 0.25em solid #1D961C;
 		height: 100%;
 }
 
 .conceptual {
-	color: yellow;
+	color: #E5CE21;
 	height: 100%;
 }
 
+a.conceptual:hover {
+  color: #E5CE21;
+  text-decoration: underline;
+}
+
 .conceptual .project {
-	background: yellow;
+	background: #E5CE21;
 		height: 100%;
 }
 
 .conceptual .category-block {
-	border: 0.25em solid yellow;
+	border: 0.25em solid #E5CE21;
 		height: 100%;
 }
 
@@ -225,6 +275,10 @@ h7 {
 address {
 	line-height: 2em;
 	text-align: right;
+}
+
+.address-mobile {
+	text-align: center;
 }
 
 .navi {
@@ -402,7 +456,7 @@ address {
 
 .wrapper h6 {
 	position: absolute;
-	bottom: 35%;
+	bottom: 10%;
 	color: white;
 	left: 20%;
 	font-size: 70%;
@@ -410,10 +464,26 @@ address {
 	font-weight: normal;
 }
 
-.wrapper h7 {
+.wrapper-black {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  padding: 0;
+  position: relative;
+}
+
+.wrapper-black h1 {
 	position: absolute;
-	bottom: 10%;
-	color: white;
+	bottom: 15%;
+	color: #111;
+	left: 20%;
+	font-size: 2.5em;
+}
+
+.wrapper-black h6 {
+	position: absolute;
+	bottom: 0;
+	color: #111;
 	left: 20%;
 	font-size: 70%;
 	text-transform: uppercase;
@@ -449,12 +519,23 @@ address {
   visibility: hidden;
 }
 
-.public-spaces, .sports {
+.public-spaces, .sports, .commercial, .retail, .restaurant, .civic, .interiors, .conceptual {
   transition: all 0.3s ease;
 }
 
+
 .featured-project .bkg-responsive, .featured-project .bkg-responsive:hover {
-  border: 0;
+  opacity: 1;
+}
+
+.image-hider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  border-right: 5px solid white;
 }
 
 .bkg-responsive {
@@ -463,15 +544,164 @@ address {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: 2;
+  transition: opacity 0.3s ease;
+  top: 0;
+  left: 0;
+  border-right: 5px solid white;
 }
 
-#public-spaces .regular-project .bkg-responsive {
-  background-position: -100%;
-  background-color: orange;
+.regular-project .bkg-responsive {
+  opacity: 0;
 }
 
-#sports .regular-project .bkg-responsive {
-  background-position: -100%;
-  background-color: red;
+#sports .image-hider {
+  background-color: #911C00;
 }
 
+#commercial .image-hider {
+  background-color: #4D1E8B;
+}
+
+#retail .image-hider {
+  background-color: #201B90;
+}
+
+#restaurant .image-hider {
+  background-color: #81008B;
+}
+
+#civic .image-hider {
+  background-color: #079AD7;
+}
+
+#interiors .image-hider {
+  background-color: #1D961C;
+}
+
+#conceptual .image-hider {
+  background-color: #E5CE21;
+}
+
+.featured-project a{
+color: #fff;
+}
+
+.featured-project a:hover{
+color: #FFF;
+}
+
+.bkg-responsive .title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  /*width: 100%;*/
+  padding: 0.5em 1em;
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.93) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.93))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.93) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.93) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.93) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.93) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#ed000000',GradientType=0 ); /* IE6-9 */
+}
+
+.regular-project .title {
+  opacity: 0;
+  min-width: 200px;
+}
+
+.featured-project .title {
+  opacity: 1;
+  width: 100%;
+}
+
+.category-title-text {
+  width: 18.5rem;
+}
+
+.category-title-block span{
+  padding-right: 1em;
+  padding-left: 0.75em;
+  border-right: 2px solid #ccc;
+}
+
+.category-title-block span:first-child{
+  padding-left: 0;
+}
+
+.category-title-block span:last-child{
+  border-right: none;
+}
+
+.category-title-block span:only-child{
+  border-right: none;
+}
+
+.category-title-block .featured-ps, .category-title-block .featured-civic, .category-title-block .featured-commercial, .category-title-block .featured-conceptual, .category-title-block .featured-interiors, .category-title-block .featured-retail, .category-title-block .featured-restaurants, .category-title-block .featured-sports {
+  display: none;
+}
+
+.category-label-right {
+  position: absolute;
+  right: .7em;
+  top: .1em;
+}
+
+.category-label-left {
+  position: absolute;
+  left: .7em;
+  top: .1em;
+}
+
+.category-label-left-bottom {
+  position: absolute;
+  left: .7em;
+  bottom: .15em;
+}
+
+.carousel-control {
+  width:10%;
+}
+
+a.carousel-control{
+  color: #fff;
+  opacity:0.6;
+}
+
+.carousel-control.right {
+  background-image: none;
+}
+
+.carousel-control.left {
+  background-image: none;
+}
+
+.carousel-control .glyphicon-chevron-right {
+  right: 50%;
+}
+
+.carousel-control .glyphicon-chevron-left {
+  left: 50%;
+}
+
+.site-logo {
+ /*max-height: 250px;*/
+}
+
+.cat-pag-object{
+  height: 15.571em !important;
+  margin-bottom: 1em;
+}
+
+@media (max-width:768px) {
+  .menu-nav-list{
+    text-align: center;
+  }
+  
+  .wrapper h1, .wrapper h6 {
+    left: 5%;
+  }
+}

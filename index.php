@@ -8,29 +8,53 @@
   <div class="row category-row" id="public-spaces">
     
     <div class="col-md-2 public-spaces">
-      <div class="category-block">Public Spaces</div>
+      <div class="category-block">
+        <span class="category-label-right" >Public Spaces</span>
+        <img class="img-responsive" src="wp-content/themes/wagner-murray/images/parkspublicdesign-ready.png">
+      </div>
     </div>
   
   <?php $count = 0; ?>
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-    <?php $count++; if ($count<8) : ?>
-      <?php if (in_category('3')) : ?>
-        <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
     
+<<<<<<< HEAD
           <div class="public-spaces <?php if (in_category('6')) : ?>col-md-2 featured-project<?php else: ?>col-md-1 regular-project<?php endif; ?>">
             <div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"></div>
+=======
+    <?php if (in_category('public-spaces') && in_category('featured-ps')) : ?>
+        <?php if ($count<1) : ?>
+          <div class="public-spaces col-md-2 featured-project hidden-sm hidden-xs">
+            <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
+            <a class="clickable" href="<?php the_permalink() ?>"><div class="image-hider"></div><div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"><div class="title"><?php the_title(); ?></div></div></a>
+>>>>>>> ca5725d51c8dbed15031ec0f998d23847cd840e7
           </div>
-      <? endif; endif; ?>
-  
-  <?
-  endwhile;
-  endif;
-  ?>
+        <?php $count++; ?>
+  <?php endif; endif; endwhile; endif; ?>
+      
+  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+    
+    <?php if (in_category('public-spaces') && !in_category('featured-ps')) : ?>
+      <?php $count++; if ($count<8) : ?>
+        <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
+          <div class="public-spaces col-md-1 regular-project hidden-sm hidden-xs">
+            <a class="clickable" href="<?php the_permalink() ?>">
+              <div class="image-hider"></div>
+              <div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)">
+                <div class="title"><?php the_title(); ?></div>
+              </div>
+              </a>
+          </div>
+    <?php endif; endif; endwhile; endif; ?>
   </div>
   
   
   <script type="text/javascript">
     $( ".public-spaces" ).hover(function() {
+      if ('ontouchstart' in window || navigator.msMaxTouchPoints) {
+        $("a").one("click", false, function(e){
+          e.preventDefault();
+        });
+      }
       if ( $(this).hasClass("regular-project") ) {
         var featWidth = $( "#col-2-const" ).width();
         var regWidth = $( "#col-1-const").width();
@@ -40,6 +64,7 @@
         $( ".public-spaces.featured-project" ).addClass("regular-project");
         $( ".public-spaces.featured-project" ).removeClass("featured-project");
         $( this ).addClass("featured-project");
+        $( this ).append("<span id=\"mobile-hack\"></span>");
         //$( this ).addClass("col-md-2");
       }
     });
@@ -53,24 +78,46 @@
   
   <?php $count = 0; ?>
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-    <?php $count++; if ($count<8) : ?>
-      <?php if (in_category('4')) : ?>
-        <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
     
+<<<<<<< HEAD
           <div class="sports <?php if (in_category('6')) : ?>col-md-2 featured-project<?php else: ?>col-md-1 regular-project<?php endif; ?>">
             <div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"></div>
+=======
+    <?php if (in_category('sports')) : ?>
+      <?php if (in_category('featured-sports')) : ?>
+        <?php if ($count<1) : ?>
+          <div class="sports col-md-2 featured-project hidden-sm hidden-xs">
+            <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
+            <a href="<?php the_permalink() ?>"><div class="image-hider"></div><div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"><div class="title"><?php the_title(); ?></div></div></a>
+>>>>>>> ca5725d51c8dbed15031ec0f998d23847cd840e7
           </div>
-      <? endif; endif; ?>
-  
-  <?
-  endwhile;
-  endif;
-  ?>
+        <?php $count++; ?>
+      <?php endif; endif; endif; endwhile; endif; ?>
+      
+  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+    
+    <?php if (in_category('sports') && !in_category('featured-sports')) : ?>
+      <?php $count++; if ($count<8) : ?>
+        <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
+          <div class="sports col-md-1 regular-project hidden-sm hidden-xs">
+            <a href="<?php the_permalink() ?>">
+              <div class="image-hider"></div>
+              <div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)">
+                <div class="title"><?php the_title(); ?></div>
+              </div>
+              </a>
+          </div>
+    <?php endif; endif; endwhile; endif; ?>
   </div>
   
   
   <script type="text/javascript">
-    $( ".public-spaces" ).hover(function() {
+    $( ".sports" ).hover(function() {
+      if ('ontouchstart' in window || navigator.msMaxTouchPoints) {
+        $("a").one("click", false, function(e){
+          e.preventDefault();
+        });
+      }
       if ( $(this).hasClass("regular-project") ) {
         var featWidth = $( "#col-2-const" ).width();
         var regWidth = $( "#col-1-const").width();
@@ -88,6 +135,7 @@
   <div class="row category-row" id="commercial">
     
     <div class="col-md-2 commercial">
+<<<<<<< HEAD
       <div class="category-block">commercial</div>
     </div>
   
@@ -106,11 +154,54 @@
   endwhile;
   endif;
   ?>
+=======
+      <div class="category-block">
+        <span class="category-label-left-bottom">commercial</span>
+        <img class="img-responsive" src="wp-content/themes/wagner-murray/images/CommercialOfficeDesign-ready.png">
+      </div>
+    </div>
+  <?php $count = 0; ?>
+  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+    
+    <?php if (in_category('commercial')) : ?>
+      <?php if (in_category('featured-commercial')) : ?>
+        <?php if ($count<1) : ?>
+          <div class="commercial col-md-2 featured-project hidden-sm hidden-xs">
+            <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
+            <a href="<?php the_permalink() ?>"><div class="image-hider"></div><div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"><div class="title"><?php the_title(); ?></div></div></a>
+          </div>
+        <?php $count++; ?>
+      <?php endif; endif; endif; endwhile; endif; ?>
+      
+  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+    
+    <?php if (in_category('commercial') && !in_category('featured-commercial')) : ?>
+      <?php $count++; if ($count<8) : ?>
+        <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
+          <div class="commercial col-md-1 regular-project hidden-sm hidden-xs">
+            <a href="<?php the_permalink() ?>">
+              <div class="image-hider"></div>
+              <div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)">
+                <div class="title"><?php the_title(); ?></div>
+              </div>
+              </a>
+          </div>
+    <?php endif; endif; endwhile; endif; ?>
+>>>>>>> ca5725d51c8dbed15031ec0f998d23847cd840e7
   </div>
   
   
   <script type="text/javascript">
+<<<<<<< HEAD
     $( ".public-spaces" ).hover(function() {
+=======
+    $( ".commercial" ).hover(function() {
+      if ('ontouchstart' in window || navigator.msMaxTouchPoints) {
+        $("a").one("click", false, function(e){
+          e.preventDefault();
+        });
+      }
+>>>>>>> ca5725d51c8dbed15031ec0f998d23847cd840e7
       if ( $(this).hasClass("regular-project") ) {
         var featWidth = $( "#col-2-const" ).width();
         var regWidth = $( "#col-1-const").width();
@@ -129,11 +220,19 @@
   <div class="row category-row" id="retail">
     
     <div class="col-md-2 retail">
+<<<<<<< HEAD
       <div class="category-block">retail</div>
+=======
+      <div class="category-block">
+        <span class="category-label-left">retail</span>
+        <img class="img-responsive" src="wp-content/themes/wagner-murray/images/RetailDesign-ready.png">
+      </div>
+>>>>>>> ca5725d51c8dbed15031ec0f998d23847cd840e7
     </div>
   
   <?php $count = 0; ?>
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+<<<<<<< HEAD
     <?php $count++; if ($count<8) : ?>
       <?php if (in_category('4')) : ?>
         <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
@@ -147,11 +246,47 @@
   endwhile;
   endif;
   ?>
+=======
+    
+    <?php if (in_category('retail')) : ?>
+      <?php if (in_category('featured-retail')) : ?>
+        <?php if ($count<1) : ?>
+          <div class="retail col-md-2 featured-project hidden-sm hidden-xs">
+            <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
+            <a href="<?php the_permalink() ?>"><div class="image-hider"></div><div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"><div class="title"><?php the_title(); ?></div></div></a>
+          </div>
+        <?php $count++; ?>
+      <?php endif; endif; endif; endwhile; endif; ?>
+      
+  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+    
+    <?php if (in_category('retail') && !in_category('featured-retail')) : ?>
+      <?php $count++; if ($count<8) : ?>
+        <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
+          <div class="retail col-md-1 regular-project hidden-sm hidden-xs">
+            <a href="<?php the_permalink() ?>">
+              <div class="image-hider"></div>
+              <div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)">
+                <div class="title"><?php the_title(); ?></div>
+              </div>
+              </a>
+          </div>
+    <?php endif; endif; endwhile; endif; ?>
+>>>>>>> ca5725d51c8dbed15031ec0f998d23847cd840e7
   </div>
   
   
   <script type="text/javascript">
+<<<<<<< HEAD
     $( ".public-spaces" ).hover(function() {
+=======
+    $( ".retail" ).hover(function() {
+      if ('ontouchstart' in window || navigator.msMaxTouchPoints) {
+        $("a").one("click", false, function(e){
+          e.preventDefault();
+        });
+      }
+>>>>>>> ca5725d51c8dbed15031ec0f998d23847cd840e7
       if ( $(this).hasClass("regular-project") ) {
         var featWidth = $( "#col-2-const" ).width();
         var regWidth = $( "#col-1-const").width();
@@ -169,11 +304,19 @@
   <div class="row category-row" id="restaurant">
     
     <div class="col-md-2 restaurant">
+<<<<<<< HEAD
       <div class="category-block">restaurant</div>
+=======
+      <div class="category-block">
+        <span class="category-label-left">restaurant</span>
+        <img class="img-responsive" src="wp-content/themes/wagner-murray/images/RestaurantDesign-ready.png">
+      </div>
+>>>>>>> ca5725d51c8dbed15031ec0f998d23847cd840e7
     </div>
   
   <?php $count = 0; ?>
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+<<<<<<< HEAD
     <?php $count++; if ($count<8) : ?>
       <?php if (in_category('4')) : ?>
         <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
@@ -187,11 +330,47 @@
   endwhile;
   endif;
   ?>
+=======
+    
+    <?php if (in_category('restaurant')) : ?>
+      <?php if (in_category('featured-restaurants')) : ?>
+        <?php if ($count<1) : ?>
+          <div class="restaurant col-md-2 featured-project hidden-sm hidden-xs">
+            <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
+            <a href="<?php the_permalink() ?>"><div class="image-hider"></div><div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"><div class="title"><?php the_title(); ?></div></div></a>
+          </div>
+        <?php $count++; ?>
+      <?php endif; endif; endif; endwhile; endif; ?>
+      
+  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+    
+    <?php if (in_category('restaurant') && !in_category('featured-restaurants')) : ?>
+      <?php $count++; if ($count<8) : ?>
+        <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
+          <div class="restaurant col-md-1 regular-project hidden-sm hidden-xs">
+            <a href="<?php the_permalink() ?>">
+              <div class="image-hider"></div>
+              <div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)">
+                <div class="title"><?php the_title(); ?></div>
+              </div>
+              </a>
+          </div>
+    <?php endif; endif; endwhile; endif; ?>
+>>>>>>> ca5725d51c8dbed15031ec0f998d23847cd840e7
   </div>
   
   
   <script type="text/javascript">
+<<<<<<< HEAD
     $( ".public-spaces" ).hover(function() {
+=======
+    $( ".restaurant" ).hover(function() {
+      if ('ontouchstart' in window || navigator.msMaxTouchPoints) {
+        $("a").one("click", false, function(e){
+          e.preventDefault();
+        });
+      }
+>>>>>>> ca5725d51c8dbed15031ec0f998d23847cd840e7
       if ( $(this).hasClass("regular-project") ) {
         var featWidth = $( "#col-2-const" ).width();
         var regWidth = $( "#col-1-const").width();
@@ -214,6 +393,7 @@
   
   <?php $count = 0; ?>
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+<<<<<<< HEAD
     <?php $count++; if ($count<8) : ?>
       <?php if (in_category('4')) : ?>
         <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
@@ -227,11 +407,47 @@
   endwhile;
   endif;
   ?>
+=======
+    
+    <?php if (in_category('civic')) : ?>
+      <?php if (in_category('featured-civic')) : ?>
+        <?php if ($count<1) : ?>
+          <div class="civic col-md-2 featured-project hidden-sm hidden-xs">
+            <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
+            <a href="<?php the_permalink() ?>"><div class="image-hider"></div><div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"><div class="title"><?php the_title(); ?></div></div></a>
+          </div>
+        <?php $count++; ?>
+      <?php endif; endif; endif; endwhile; endif; ?>
+      
+  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+    
+    <?php if (in_category('civic') && !in_category('featured-civic')) : ?>
+      <?php $count++; if ($count<8) : ?>
+        <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
+          <div class="civic col-md-1 regular-project hidden-sm hidden-xs">
+            <a href="<?php the_permalink() ?>">
+              <div class="image-hider"></div>
+              <div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)">
+                <div class="title"><?php the_title(); ?></div>
+              </div>
+              </a>
+          </div>
+    <?php endif; endif; endwhile; endif; ?>
+>>>>>>> ca5725d51c8dbed15031ec0f998d23847cd840e7
   </div>
   
   
   <script type="text/javascript">
+<<<<<<< HEAD
     $( ".public-spaces" ).hover(function() {
+=======
+    $( ".civic" ).hover(function() {
+      if ('ontouchstart' in window || navigator.msMaxTouchPoints) {
+        $("a").one("click", false, function(e){
+          e.preventDefault();
+        });
+      }
+>>>>>>> ca5725d51c8dbed15031ec0f998d23847cd840e7
       if ( $(this).hasClass("regular-project") ) {
         var featWidth = $( "#col-2-const" ).width();
         var regWidth = $( "#col-1-const").width();
@@ -250,11 +466,19 @@
   <div class="row category-row" id="interiors">
     
     <div class="col-md-2 interiors">
+<<<<<<< HEAD
       <div class="category-block">interiors</div>
+=======
+      <div class="category-block">
+        <span class="category-label-left">interiors</span>
+        <img class="img-responsive" src="wp-content/themes/wagner-murray/images/interiordesign-ready.png">
+      </div>
+>>>>>>> ca5725d51c8dbed15031ec0f998d23847cd840e7
     </div>
   
   <?php $count = 0; ?>
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+<<<<<<< HEAD
     <?php $count++; if ($count<8) : ?>
       <?php if (in_category('4')) : ?>
         <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
@@ -273,6 +497,42 @@
   
   <script type="text/javascript">
     $( ".public-spaces" ).hover(function() {
+=======
+    
+    <?php if (in_category('interiors')) : ?>
+      <?php if (in_category('featured-interiors')) : ?>
+        <?php if ($count<1) : ?>
+          <div class="interiors col-md-2 featured-project hidden-sm hidden-xs">
+            <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
+            <a href="<?php the_permalink() ?>"><div class="image-hider"></div><div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"><div class="title"><?php the_title(); ?></div></div></a>
+          </div>
+        <?php $count++; ?>
+      <?php endif; endif; endif; endwhile; endif; ?>
+      
+  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+    
+    <?php if (in_category('interiors') && !in_category('featured-interiors')) : ?>
+      <?php $count++; if ($count<8) : ?>
+        <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
+          <div class="interiors col-md-1 regular-project hidden-sm hidden-xs">
+            <a href="<?php the_permalink() ?>">
+              <div class="image-hider"></div>
+              <div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)">
+                <div class="title"><?php the_title(); ?></div>
+              </div>
+              </a>
+          </div>
+    <?php endif; endif; endwhile; endif; ?>  </div>
+  
+  
+  <script type="text/javascript">
+    $( ".interiors" ).hover(function() {
+      if ('ontouchstart' in window || navigator.msMaxTouchPoints) {
+        $("a").one("click", false, function(e){
+          e.preventDefault();
+        });
+      }
+>>>>>>> ca5725d51c8dbed15031ec0f998d23847cd840e7
       if ( $(this).hasClass("regular-project") ) {
         var featWidth = $( "#col-2-const" ).width();
         var regWidth = $( "#col-1-const").width();
@@ -296,6 +556,7 @@
   
   <?php $count = 0; ?>
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+<<<<<<< HEAD
     <?php $count++; if ($count<8) : ?>
       <?php if (in_category('4')) : ?>
         <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
@@ -309,11 +570,47 @@
   endwhile;
   endif;
   ?>
+=======
+    
+    <?php if (in_category('conceptual')) : ?>
+      <?php if (in_category('featured-conceptual')) : ?>
+        <?php if ($count<1) : ?>
+          <div class="conceptual col-md-2 featured-project hidden-sm hidden-xs">
+            <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
+            <a href="<?php the_permalink() ?>"><div class="image-hider"></div><div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"><div class="title"><?php the_title(); ?></div></div></a>
+          </div>
+        <?php $count++; ?>
+      <?php endif; endif; endif; endwhile; endif; ?>
+      
+  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+    
+    <?php if (in_category('conceptual') && !in_category('featured-conceptual')) : ?>
+      <?php $count++; if ($count<8) : ?>
+        <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
+          <div class="conceptual col-md-1 regular-project hidden-sm hidden-xs">
+            <a href="<?php the_permalink() ?>">
+              <div class="image-hider"></div>
+              <div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)">
+                <div class="title"><?php the_title(); ?></div>
+              </div>
+              </a>
+          </div>
+    <?php endif; endif; endwhile; endif; ?>
+>>>>>>> ca5725d51c8dbed15031ec0f998d23847cd840e7
   </div>
   
   
   <script type="text/javascript">
+<<<<<<< HEAD
     $( ".public-spaces" ).hover(function() {
+=======
+    $( ".conceptual" ).hover(function() {
+      if ('ontouchstart' in window || navigator.msMaxTouchPoints) {
+        $("a").one("click", false, function(e){
+          e.preventDefault();
+        });
+      }
+>>>>>>> ca5725d51c8dbed15031ec0f998d23847cd840e7
       if ( $(this).hasClass("regular-project") ) {
         var featWidth = $( "#col-2-const" ).width();
         var regWidth = $( "#col-1-const").width();

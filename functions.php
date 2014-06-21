@@ -16,4 +16,21 @@ if( !function_exists("theme_styles") ) {
 }
 add_action( 'wp_enqueue_scripts', 'theme_styles' );
 
+function custom_excerpt_length( $length ) {
+  return 10;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999);
+
+function get_custom_cat_template($single_template) {
+     global $post;
+ 
+       if ( in_category( 'blog' )) {
+          $single_template = dirname( __FILE__ ) . '/single-blog.php';
+     }
+     return $single_template;
+}
+ 
+add_filter( "single_template", "get_custom_cat_template" ) ;
+
+
 ?>
