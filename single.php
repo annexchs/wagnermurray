@@ -42,23 +42,17 @@
               'exclude' => get_post_thumbnail_id()
             ));
             $imgCount = 0;
+            $imgCountTotal = count($images);
             foreach($images as $image) {
-              if ($imgCount == 0) {
+              if($imgCountTotal != 1 ) {
+                if ($imgCount == 0) {
           ?>
             <li data-target="#project-images" data-slide-to="0" class="active"></li>
           <?php } else { ?>
             <li data-target="#project-images" data-slide-to="<?php echo $imgCount?>" ></li>
-          <?php } $imgCount+=1; }; ?>
+          <?php } $imgCount+=1; }; }; ?>
           
         </ol>
-
-      <!--<div id="project-images" class="carousel slide" data-ride="carousel">
-        indicators
-        <ol class="carousel-indicators">
-          <li data-target="#project-images" data-slide-to="0" class="active"></li>
-          <li data-target="#project-images" data-slide-to="1"></li>
-          <li data-target="#project-images" data-slide-to="2"></li>
-        </ol> -->
 
           <!-- Wrapper for slides -->
 
@@ -77,12 +71,14 @@
         </div>
 
         <!-- Controls -->
+        <?php if($imgCount != 1) { ?>
         <a class="left carousel-control" href="#project-images" data-slide="prev">
           <span class="glyphicon glyphicon-chevron-left"></span>
         </a>
         <a class="right carousel-control" href="#project-images" data-slide="next">
           <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
+        <?php } ?>
       </div>
     </div>
 </div>
