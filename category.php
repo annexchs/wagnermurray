@@ -12,7 +12,7 @@
         </div>
       </div>
 
-      <div class="row" id="<?php echo $catSlug; ?> projects"> 
+      <div class="row" id="<?php echo $catSlug; ?>"> 
 
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <div class="<?php echo $catSlug; ?> col-md-2 featured-project cat-pag-object">
