@@ -44,7 +44,8 @@
   
   
   <script type="text/javascript">
-    $( ".public-spaces" ).hover(function() {
+    $( ".public-spaces" ).hover(function(e) {
+      e.preventDefault();
       if ( $(this).hasClass("regular-project") ) {
         var featWidth = $( "#col-2-const" ).width();
         var regWidth = $( "#col-1-const").width();
