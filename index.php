@@ -17,11 +17,16 @@
   <?php $count = 0; ?>
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     
+<<<<<<< HEAD
+          <div class="public-spaces <?php if (in_category('6')) : ?>col-md-2 featured-project<?php else: ?>col-md-1 regular-project<?php endif; ?>">
+            <div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"></div>
+=======
     <?php if (in_category('public-spaces') && in_category('featured-ps')) : ?>
         <?php if ($count<1) : ?>
           <div class="public-spaces col-md-2 featured-project hidden-sm hidden-xs">
             <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
             <a class="clickable" href="<?php the_permalink() ?>"><div class="image-hider"></div><div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"><div class="title"><?php the_title(); ?></div></div></a>
+>>>>>>> ca5725d51c8dbed15031ec0f998d23847cd840e7
           </div>
         <?php $count++; ?>
   <?php endif; endif; endwhile; endif; ?>
@@ -74,12 +79,17 @@
   <?php $count = 0; ?>
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     
+<<<<<<< HEAD
+          <div class="sports <?php if (in_category('6')) : ?>col-md-2 featured-project<?php else: ?>col-md-1 regular-project<?php endif; ?>">
+            <div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"></div>
+=======
     <?php if (in_category('sports')) : ?>
       <?php if (in_category('featured-sports')) : ?>
         <?php if ($count<1) : ?>
           <div class="sports col-md-2 featured-project hidden-sm hidden-xs">
             <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
             <a href="<?php the_permalink() ?>"><div class="image-hider"></div><div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"><div class="title"><?php the_title(); ?></div></div></a>
+>>>>>>> ca5725d51c8dbed15031ec0f998d23847cd840e7
           </div>
         <?php $count++; ?>
       <?php endif; endif; endif; endwhile; endif; ?>
@@ -125,6 +135,26 @@
   <div class="row category-row" id="commercial">
     
     <div class="col-md-2 commercial">
+<<<<<<< HEAD
+      <div class="category-block">commercial</div>
+    </div>
+  
+  <?php $count = 0; ?>
+  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+    <?php $count++; if ($count<8) : ?>
+      <?php if (in_category('4')) : ?>
+        <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
+    
+          <div class="commercial <?php if (in_category('6')) : ?>col-md-2 featured-project<?php else: ?>col-md-1 regular-project<?php endif; ?>">
+            <div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"></div>
+          </div>
+      <? endif; endif; ?>
+  
+  <?
+  endwhile;
+  endif;
+  ?>
+=======
       <div class="category-block">
         <span class="category-label-left-bottom">commercial</span>
         <img class="img-responsive" src="wp-content/themes/wagner-murray/images/CommercialOfficeDesign-ready.png">
@@ -157,16 +187,21 @@
               </a>
           </div>
     <?php endif; endif; endwhile; endif; ?>
+>>>>>>> ca5725d51c8dbed15031ec0f998d23847cd840e7
   </div>
   
   
   <script type="text/javascript">
+<<<<<<< HEAD
+    $( ".public-spaces" ).hover(function() {
+=======
     $( ".commercial" ).hover(function() {
       if ('ontouchstart' in window || navigator.msMaxTouchPoints) {
         $("a").one("click", false, function(e){
           e.preventDefault();
         });
       }
+>>>>>>> ca5725d51c8dbed15031ec0f998d23847cd840e7
       if ( $(this).hasClass("regular-project") ) {
         var featWidth = $( "#col-2-const" ).width();
         var regWidth = $( "#col-1-const").width();
@@ -185,14 +220,33 @@
   <div class="row category-row" id="retail">
     
     <div class="col-md-2 retail">
+<<<<<<< HEAD
+      <div class="category-block">retail</div>
+=======
       <div class="category-block">
         <span class="category-label-left">retail</span>
         <img class="img-responsive" src="wp-content/themes/wagner-murray/images/RetailDesign-ready.png">
       </div>
+>>>>>>> ca5725d51c8dbed15031ec0f998d23847cd840e7
     </div>
   
   <?php $count = 0; ?>
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+<<<<<<< HEAD
+    <?php $count++; if ($count<8) : ?>
+      <?php if (in_category('4')) : ?>
+        <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
+    
+          <div class="retail <?php if (in_category('6')) : ?>col-md-2 featured-project<?php else: ?>col-md-1 regular-project<?php endif; ?>">
+            <div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"></div>
+          </div>
+      <? endif; endif; ?>
+  
+  <?
+  endwhile;
+  endif;
+  ?>
+=======
     
     <?php if (in_category('retail')) : ?>
       <?php if (in_category('featured-retail')) : ?>
@@ -218,16 +272,21 @@
               </a>
           </div>
     <?php endif; endif; endwhile; endif; ?>
+>>>>>>> ca5725d51c8dbed15031ec0f998d23847cd840e7
   </div>
   
   
   <script type="text/javascript">
+<<<<<<< HEAD
+    $( ".public-spaces" ).hover(function() {
+=======
     $( ".retail" ).hover(function() {
       if ('ontouchstart' in window || navigator.msMaxTouchPoints) {
         $("a").one("click", false, function(e){
           e.preventDefault();
         });
       }
+>>>>>>> ca5725d51c8dbed15031ec0f998d23847cd840e7
       if ( $(this).hasClass("regular-project") ) {
         var featWidth = $( "#col-2-const" ).width();
         var regWidth = $( "#col-1-const").width();
@@ -245,14 +304,33 @@
   <div class="row category-row" id="restaurant">
     
     <div class="col-md-2 restaurant">
+<<<<<<< HEAD
+      <div class="category-block">restaurant</div>
+=======
       <div class="category-block">
         <span class="category-label-left">restaurant</span>
         <img class="img-responsive" src="wp-content/themes/wagner-murray/images/RestaurantDesign-ready.png">
       </div>
+>>>>>>> ca5725d51c8dbed15031ec0f998d23847cd840e7
     </div>
   
   <?php $count = 0; ?>
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+<<<<<<< HEAD
+    <?php $count++; if ($count<8) : ?>
+      <?php if (in_category('4')) : ?>
+        <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
+    
+          <div class="restaurant <?php if (in_category('6')) : ?>col-md-2 featured-project<?php else: ?>col-md-1 regular-project<?php endif; ?>">
+            <div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"></div>
+          </div>
+      <? endif; endif; ?>
+  
+  <?
+  endwhile;
+  endif;
+  ?>
+=======
     
     <?php if (in_category('restaurant')) : ?>
       <?php if (in_category('featured-restaurants')) : ?>
@@ -278,16 +356,21 @@
               </a>
           </div>
     <?php endif; endif; endwhile; endif; ?>
+>>>>>>> ca5725d51c8dbed15031ec0f998d23847cd840e7
   </div>
   
   
   <script type="text/javascript">
+<<<<<<< HEAD
+    $( ".public-spaces" ).hover(function() {
+=======
     $( ".restaurant" ).hover(function() {
       if ('ontouchstart' in window || navigator.msMaxTouchPoints) {
         $("a").one("click", false, function(e){
           e.preventDefault();
         });
       }
+>>>>>>> ca5725d51c8dbed15031ec0f998d23847cd840e7
       if ( $(this).hasClass("regular-project") ) {
         var featWidth = $( "#col-2-const" ).width();
         var regWidth = $( "#col-1-const").width();
@@ -310,6 +393,21 @@
   
   <?php $count = 0; ?>
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+<<<<<<< HEAD
+    <?php $count++; if ($count<8) : ?>
+      <?php if (in_category('4')) : ?>
+        <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
+    
+          <div class="civic <?php if (in_category('6')) : ?>col-md-2 featured-project<?php else: ?>col-md-1 regular-project<?php endif; ?>">
+            <div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"></div>
+          </div>
+      <? endif; endif; ?>
+  
+  <?
+  endwhile;
+  endif;
+  ?>
+=======
     
     <?php if (in_category('civic')) : ?>
       <?php if (in_category('featured-civic')) : ?>
@@ -335,16 +433,21 @@
               </a>
           </div>
     <?php endif; endif; endwhile; endif; ?>
+>>>>>>> ca5725d51c8dbed15031ec0f998d23847cd840e7
   </div>
   
   
   <script type="text/javascript">
+<<<<<<< HEAD
+    $( ".public-spaces" ).hover(function() {
+=======
     $( ".civic" ).hover(function() {
       if ('ontouchstart' in window || navigator.msMaxTouchPoints) {
         $("a").one("click", false, function(e){
           e.preventDefault();
         });
       }
+>>>>>>> ca5725d51c8dbed15031ec0f998d23847cd840e7
       if ( $(this).hasClass("regular-project") ) {
         var featWidth = $( "#col-2-const" ).width();
         var regWidth = $( "#col-1-const").width();
@@ -363,14 +466,38 @@
   <div class="row category-row" id="interiors">
     
     <div class="col-md-2 interiors">
+<<<<<<< HEAD
+      <div class="category-block">interiors</div>
+=======
       <div class="category-block">
         <span class="category-label-left">interiors</span>
         <img class="img-responsive" src="wp-content/themes/wagner-murray/images/interiordesign-ready.png">
       </div>
+>>>>>>> ca5725d51c8dbed15031ec0f998d23847cd840e7
     </div>
   
   <?php $count = 0; ?>
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+<<<<<<< HEAD
+    <?php $count++; if ($count<8) : ?>
+      <?php if (in_category('4')) : ?>
+        <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
+    
+          <div class="interiors <?php if (in_category('6')) : ?>col-md-2 featured-project<?php else: ?>col-md-1 regular-project<?php endif; ?>">
+            <div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"></div>
+          </div>
+      <? endif; endif; ?>
+  
+  <?
+  endwhile;
+  endif;
+  ?>
+  </div>
+  
+  
+  <script type="text/javascript">
+    $( ".public-spaces" ).hover(function() {
+=======
     
     <?php if (in_category('interiors')) : ?>
       <?php if (in_category('featured-interiors')) : ?>
@@ -405,6 +532,7 @@
           e.preventDefault();
         });
       }
+>>>>>>> ca5725d51c8dbed15031ec0f998d23847cd840e7
       if ( $(this).hasClass("regular-project") ) {
         var featWidth = $( "#col-2-const" ).width();
         var regWidth = $( "#col-1-const").width();
@@ -428,6 +556,21 @@
   
   <?php $count = 0; ?>
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+<<<<<<< HEAD
+    <?php $count++; if ($count<8) : ?>
+      <?php if (in_category('4')) : ?>
+        <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
+    
+          <div class="conceptual <?php if (in_category('6')) : ?>col-md-2 featured-project<?php else: ?>col-md-1 regular-project<?php endif; ?>">
+            <div class="bkg-responsive" style="background-image:url(<?php echo $img_src[0] ?>)"></div>
+          </div>
+      <? endif; endif; ?>
+  
+  <?
+  endwhile;
+  endif;
+  ?>
+=======
     
     <?php if (in_category('conceptual')) : ?>
       <?php if (in_category('featured-conceptual')) : ?>
@@ -453,16 +596,21 @@
               </a>
           </div>
     <?php endif; endif; endwhile; endif; ?>
+>>>>>>> ca5725d51c8dbed15031ec0f998d23847cd840e7
   </div>
   
   
   <script type="text/javascript">
+<<<<<<< HEAD
+    $( ".public-spaces" ).hover(function() {
+=======
     $( ".conceptual" ).hover(function() {
       if ('ontouchstart' in window || navigator.msMaxTouchPoints) {
         $("a").one("click", false, function(e){
           e.preventDefault();
         });
       }
+>>>>>>> ca5725d51c8dbed15031ec0f998d23847cd840e7
       if ( $(this).hasClass("regular-project") ) {
         var featWidth = $( "#col-2-const" ).width();
         var regWidth = $( "#col-1-const").width();
