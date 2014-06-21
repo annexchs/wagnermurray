@@ -54,6 +54,8 @@
         $( ".public-spaces.featured-project" ).addClass("regular-project");
         $( ".public-spaces.featured-project" ).removeClass("featured-project");
         $( this ).addClass("featured-project");
+        $( this ).after("<span id=\"mobile-hack\"></span>");
+        $("#mobile-hack").remove();
         //$( this ).addClass("col-md-2");
       }
     });

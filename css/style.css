@@ -686,8 +686,15 @@ a.carousel-control{
  /*max-height: 250px;*/
 }
 
+.cat-pag-object{
+  height: 15.571em !important;
+  margin-bottom: 1em;
+}
+
 @media (max-width:768px) {
   .menu-nav-list{
     text-align: center;
   }
+  
+
 }

@@ -42,7 +42,7 @@
       $headerPost = new WP_Query();
       $headerPost->query('showposts=1&cat=2');
       while ($headerPost->have_posts()) : $headerPost->the_post(); ?>
-      <div class="col-md-2 header tease hidden-xs">
+      <div class="col-sm-2 header tease hidden-xs">
         <a href="<?php the_permalink(); ?>"><h5><strong>LATEST FROM THE BLOG</strong></h5></a>
         <a href="<?php the_permalink(); ?>"><h6 class="homeheadline"><em><?php the_title(); ?></em></h6></a>
         <div class="date">POSTED <?php the_date() ?></div>

@@ -8,7 +8,7 @@
           <h3 class="uppercase h4fix"><?php the_title(); ?></h3>
         </div>
       </div>
-      <div class="row category-row" id="public-spaces">
+      <div class="row" id="public-spaces">
         <?php the_content(); ?>
       </div>
     <?php endwhile; ?>
