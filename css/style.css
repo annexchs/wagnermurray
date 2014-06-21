@@ -659,6 +659,10 @@ color: #FFF;
   bottom: .15em;
 }
 
+.carousel-control {
+  width:10%;
+}
+
 a.carousel-control{
   color: #fff;
   opacity:0.6;
