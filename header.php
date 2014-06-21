@@ -33,10 +33,10 @@
       <div class="col-xs-10 col-sm-2 header navi">
         <hr class="visible-xs">
         <ul class="list-unstyled menu-nav-list">
-          <li><a href="?page_id=194">PROJECTS</a></li>
-          <li><a href="?page_id=120">ABOUT</a></li>
-          <li><a href="?cat=2">BLOG</a></li>
-          <li><a href="?page_id=236">CONTACT</a></li></ul>
+          <li><a href="/?page_id=194">PROJECTS</a></li>
+          <li><a href="/?page_id=120">ABOUT</a></li>
+          <li><a href="/?cat=2">BLOG</a></li>
+          <li><a href="/?page_id=236">CONTACT</a></li></ul>
       </div>
       <?php
       $headerPost = new WP_Query();
