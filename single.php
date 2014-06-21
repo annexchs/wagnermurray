@@ -71,7 +71,7 @@
         </div>
 
         <!-- Controls -->
-        <?php if($imgCount != 1) { ?>
+        <?php if($imgCount > 1) { ?>
         <a class="left carousel-control" href="#project-images" data-slide="prev">
           <span class="glyphicon glyphicon-chevron-left"></span>
         </a>
