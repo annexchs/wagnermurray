@@ -254,7 +254,7 @@
   <?php $count = 0; ?>
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     
-    <?php if (in_category('restaurants')) : ?>
+    <?php if (in_category('restaurant')) : ?>
       <?php if (in_category('featured-restaurants')) : ?>
         <?php if ($count<1) : ?>
           <div class="restaurant col-md-2 featured-project hidden-sm hidden-xs">
@@ -266,7 +266,7 @@
       
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     
-    <?php if (in_category('restaurants') && !in_category('featured-restaurants')) : ?>
+    <?php if (in_category('restaurant') && !in_category('featured-restaurants')) : ?>
       <?php $count++; if ($count<8) : ?>
         <?php $id = get_the_ID(); $img_src = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full'); ?>
           <div class="restaurant col-md-1 regular-project hidden-sm hidden-xs">

@@ -36,7 +36,7 @@ h3 {
 h4 {
 	font-size: 1.25em;
 	font-style: italic;
-		color: #111111;
+		color: #AAAAAA;
 
 }
 
@@ -662,19 +662,21 @@ color: #FFF;
   bottom: .15em;
 }
 
+.carousel-control {
+  width:10%;
+}
+
 a.carousel-control{
-  color: #000;
-  opacity:1;
+  color: #fff;
+  opacity:0.6;
 }
 
 .carousel-control.right {
-  background-image: -webkit-linear-gradient(left, color-stop(rgba(255, 255, 255, 0.0001) 0%), color-stop(rgba(255, 255, 255, 0.8) 100%));
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.0001) 0%, rgba(255, 255, 255, 0.8) 100%);
+  background-image: none;
 }
 
 .carousel-control.left {
-  background-image: -webkit-linear-gradient(left, color-stop(rgba(255, 255, 255, 0.8) 0), color-stop(rgba(255, 255, 255, 0.0001) 100%));
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0, rgba(255, 255, 255, 0.0001) 100%);
+  background-image: none;
 }
 
 .carousel-control .glyphicon-chevron-right {
@@ -699,5 +701,7 @@ a.carousel-control{
     text-align: center;
   }
   
-
+  .wrapper h1, .wrapper h6 {
+    left: 5%;
+  }
 }

@@ -4,11 +4,15 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Wagner Murray Architects, P.A. is the premier architecture firm in Charlotte, N.C." />
   <title>
       <?php bloginfo('name'); wp_title('&#124;'); ?>
         </title><!-- Bootstrap -->
+
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type='application/javascript' src='/js/fastclick.js'></script>
+  
  
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -23,6 +27,13 @@
   <?php wp_head(); ?>
 </head>
  <body>
+ 
+  <script type="text/javascript">
+    $(function() {
+      FastClick.attach(document.body);
+    });
+  </script>
+  
   <div class="container">
     <div class="row">
       <div class="col-xs-8 col-xs-offset-1 col-sm-offset-0 col-sm-2 header logo">
