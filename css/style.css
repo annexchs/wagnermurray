@@ -646,14 +646,20 @@ color: #FFF;
 
 .category-label-top {
   position: absolute;
-  margin: 0, auto;
-  top: .1em;
+  text-align: center;
+  top: .3em;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .category-label-bottom {
   position: absolute;
-  margin: 0, auto;
+  text-align: center;
   bottom: .15em;
+  left: 0;
+  right: 0 ;
+  margin: auto;
 }
 
 .carousel-control {
