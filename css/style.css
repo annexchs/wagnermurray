@@ -646,13 +646,13 @@ color: #FFF;
 
 .category-label-top {
   position: absolute;
-  text-align: center;
+  margin: 0, auto;
   top: .1em;
 }
 
 .category-label-bottom {
   position: absolute;
-  text-align: center;
+  margin: 0, auto;
   bottom: .15em;
 }
 
