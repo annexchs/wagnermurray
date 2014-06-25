@@ -134,7 +134,7 @@
     <div class="col-md-2 commercial">
       <div class="category-block">
         <a href="/projects/commercial/" >
-          <span class="category-label-top">commercial</span>
+          <span class="category-label-top">Commercial</span>
           <img class="img-responsive" src="wp-content/themes/wagner-murray/images/commercial.png">
         </a>
       </div>
