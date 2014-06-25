@@ -644,21 +644,15 @@ color: #FFF;
   display: none;
 }
 
-.category-label-right {
+.category-label-top {
   position: absolute;
-  right: .7em;
+  text-align: center;
   top: .1em;
 }
 
-.category-label-left {
+.category-label-bottom {
   position: absolute;
-  left: .7em;
-  top: .1em;
-}
-
-.category-label-left-bottom {
-  position: absolute;
-  left: .7em;
+  text-align: center;
   bottom: .15em;
 }
 

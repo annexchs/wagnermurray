@@ -10,7 +10,7 @@
     <div class="col-md-2 public-spaces">
       <div class="category-block">
         <a href="/projects/public-spaces/">
-          <span class="category-label-right" >Public Spaces</span>
+          <span class="category-label-top" >Public Spaces</span>
           <img class="img-responsive" src="wp-content/themes/wagner-murray/images/public-space.png">
         </a>
       </div>
@@ -72,7 +72,7 @@
     <div class="col-md-2 sports">
       <div class="category-block">
         <a href="/projects/sports/">
-          <span class="category-label-left">Sports</span>
+          <span class="category-label-top">Sports</span>
           <img class="img-responsive" src="wp-content/themes/wagner-murray/images/sports.png">
         </a>
       </div>
@@ -134,7 +134,7 @@
     <div class="col-md-2 commercial">
       <div class="category-block">
         <a href="/projects/commercial/" >
-          <span class="category-label-left-bottom">commercial</span>
+          <span class="category-label-top">commercial</span>
           <img class="img-responsive" src="wp-content/themes/wagner-murray/images/commercial.png">
         </a>
       </div>
@@ -196,7 +196,7 @@
     <div class="col-md-2 retail">
       <div class="category-block">
         <a href="/projects/retail/" >
-          <span class="category-label-left">Retail</span>
+          <span class="category-label-top">Retail</span>
           <img class="img-responsive" src="wp-content/themes/wagner-murray/images/retail.png">
         </a>
       </div>
@@ -258,7 +258,7 @@
     <div class="col-md-2 restaurant">
       <div class="category-block">
         <a href="/projects/restaurant/" >
-          <span class="category-label-left">Restaurants</span>
+          <span class="category-label-top">Restaurants</span>
           <img class="img-responsive" src="wp-content/themes/wagner-murray/images/restaurants.png">
         </a>
       </div>
@@ -320,7 +320,7 @@
     <div class="col-md-2 civic">
       <div class="category-block">
         <a href="/projects/civic/" >
-          <span class="category-label-left">Civic</span>
+          <span class="category-label-top">Civic</span>
           <img class="img-responsive" src="wp-content/themes/wagner-murray/images/civic.png">
         </a>
       </div>
@@ -383,7 +383,7 @@
     <div class="col-md-2 interiors">
       <div class="category-block">
         <a href="/projects/interiors/" >
-          <span class="category-label-left">Interiors</span>
+          <span class="category-label-top">Interiors</span>
           <img class="img-responsive" src="wp-content/themes/wagner-murray/images/interiors.png">
         </a>
       </div>
@@ -445,7 +445,7 @@
     <div class="col-md-2 conceptual">
       <div class="category-block">
         <a href="/projects/conceptual/" >
-          <span class="category-label-left">Conceptual</span>
+          <span class="category-label-top">Conceptual</span>
           <img class="img-responsive" src="wp-content/themes/wagner-murray/images/conceptual.png">
         </a>
       </div>
