@@ -9,8 +9,10 @@
     
     <div class="col-md-2 public-spaces">
       <div class="category-block">
-        <span class="category-label-right" >Public Spaces</span>
-        <img class="img-responsive" src="wp-content/themes/wagner-murray/images/parkspublicdesign-ready.png">
+        <a href="/projects/public-spaces/">
+          <span class="category-label-right" >Public Spaces</span>
+          <img class="img-responsive" src="wp-content/themes/wagner-murray/images/public-space.png">
+        </a>
       </div>
     </div>
   
@@ -68,7 +70,12 @@
   <div class="row category-row" id="sports">
     
     <div class="col-md-2 sports">
-      <div class="category-block">Sports</div>
+      <div class="category-block">
+        <a href="/projects/sports/">
+          <span class="category-label-left">Sports</span>
+          <img class="img-responsive" src="wp-content/themes/wagner-murray/images/sports.png">
+        </a>
+      </div>
     </div>
   
   <?php $count = 0; ?>
@@ -126,8 +133,10 @@
     
     <div class="col-md-2 commercial">
       <div class="category-block">
-        <span class="category-label-left-bottom">commercial</span>
-        <img class="img-responsive" src="wp-content/themes/wagner-murray/images/CommercialOfficeDesign-ready.png">
+        <a href="/projects/commercial/" >
+          <span class="category-label-left-bottom">commercial</span>
+          <img class="img-responsive" src="wp-content/themes/wagner-murray/images/commercial.png">
+        </a>
       </div>
     </div>
   <?php $count = 0; ?>
@@ -186,8 +195,10 @@
     
     <div class="col-md-2 retail">
       <div class="category-block">
-        <span class="category-label-left">retail</span>
-        <img class="img-responsive" src="wp-content/themes/wagner-murray/images/RetailDesign-ready.png">
+        <a href="/projects/retail/" >
+          <span class="category-label-left">Retail</span>
+          <img class="img-responsive" src="wp-content/themes/wagner-murray/images/retail.png">
+        </a>
       </div>
     </div>
   
@@ -246,8 +257,10 @@
     
     <div class="col-md-2 restaurant">
       <div class="category-block">
-        <span class="category-label-left">restaurant</span>
-        <img class="img-responsive" src="wp-content/themes/wagner-murray/images/RestaurantDesign-ready.png">
+        <a href="/projects/restaurant/" >
+          <span class="category-label-left">Restaurants</span>
+          <img class="img-responsive" src="wp-content/themes/wagner-murray/images/restaurants.png">
+        </a>
       </div>
     </div>
   
@@ -305,7 +318,12 @@
   <div class="row category-row" id="civic">
     
     <div class="col-md-2 civic">
-      <div class="category-block">civic</div>
+      <div class="category-block">
+        <a href="/projects/civic/" >
+          <span class="category-label-left">Civic</span>
+          <img class="img-responsive" src="wp-content/themes/wagner-murray/images/civic.png">
+        </a>
+      </div>
     </div>
   
   <?php $count = 0; ?>
@@ -364,8 +382,10 @@
     
     <div class="col-md-2 interiors">
       <div class="category-block">
-        <span class="category-label-left">interiors</span>
-        <img class="img-responsive" src="wp-content/themes/wagner-murray/images/interiordesign-ready.png">
+        <a href="/projects/interiors/" >
+          <span class="category-label-left">Interiors</span>
+          <img class="img-responsive" src="wp-content/themes/wagner-murray/images/interiors.png">
+        </a>
       </div>
     </div>
   
@@ -423,7 +443,12 @@
   <div class="row category-row" id="conceptual">
     
     <div class="col-md-2 conceptual">
-      <div class="category-block">conceptual</div>
+      <div class="category-block">
+        <a href="/projects/conceptual/" >
+          <span class="category-label-left">Conceptual</span>
+          <img class="img-responsive" src="wp-content/themes/wagner-murray/images/conceptual.png">
+        </a>
+      </div>
     </div>
   
   <?php $count = 0; ?>
