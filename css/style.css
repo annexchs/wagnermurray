@@ -83,7 +83,7 @@ a {
 	height: 15.571em !important;
 }
 
-.public-spaces {
+.public-spaces, .public-spaces a {
 	color: #CC3E00;
 	height: 100%;
 }
