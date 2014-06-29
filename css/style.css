@@ -670,7 +670,7 @@ color: #FFF;
 /* CAROUSEL STUFF */
 
 .carousel-inner>.item>a>img, .carousel-inner>.item>img {
-  height: 100%;
+  height: auto;
   max-height: 100%;
 }
 
