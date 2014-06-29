@@ -29,7 +29,7 @@
   </div>
   <div class="row" id="public-spaces projects">
     <div class="col-md-4">
-      <h3 class="<?php echo get_the_category()[0]->slug ?>"><?php the_title(); ?></h3>
+      <h3><?php the_title(); ?></h3>
       <h4><?php $clientKey="Client"; echo get_post_custom_values($clientKey)[0]; ?></h4>
       <h4><?php $locationKey="Location"; echo get_post_custom_values($locationKey)[0]; ?></h4>
       <p><?php the_content(); ?></p>
