@@ -35,7 +35,7 @@
       <p><?php the_content(); ?></p>
     </div>
     <div class="col-md-6 featured-project bottomfix">
-      <div id="project-images" class="carousel slide" data-ride="carousel" data-interval="4500">
+      <div id="project-images" class="carousel slide" data-ride="carousel" data-interval="0">
         <ol class="carousel-indicators">
 
           <?php
