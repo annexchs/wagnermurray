@@ -644,22 +644,22 @@ color: #FFF;
   display: none;
 }
 
-.category-label-right {
+.category-label-top {
   position: absolute;
-  right: .7em;
-  top: .1em;
+  text-align: center;
+  top: .3em;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
-.category-label-left {
+.category-label-bottom {
   position: absolute;
-  left: .7em;
-  top: .1em;
-}
-
-.category-label-left-bottom {
-  position: absolute;
-  left: .7em;
+  text-align: center;
   bottom: .15em;
+  left: 0;
+  right: 0 ;
+  margin: auto;
 }
 
 .carousel-control {
