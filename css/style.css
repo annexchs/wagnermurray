@@ -662,13 +662,17 @@ color: #FFF;
   margin: auto;
 }
 
+.carousel {
+  padding-top: 40px;
+}
+
 .carousel-control {
-  width:10%;
+  width:30px;
 }
 
 a.carousel-control{
-  color: #fff;
-  opacity:0.6;
+  color: #222;
+  opacity:1;
 }
 
 .carousel-control.right {
@@ -685,6 +689,21 @@ a.carousel-control{
 
 .carousel-control .glyphicon-chevron-left {
   left: 50%;
+}
+
+.carousel-indicators {
+  top: 10px;
+  right: 0;
+  width: auto;
+  text-align: right;
+}
+
+.carousel-indicators li{
+  border: 1px solid #222;
+}
+
+.carousel-indicators .active {
+  background-color: #222;
 }
 
 .site-logo {
@@ -719,4 +738,11 @@ a.carousel-control{
     height: 100%;
     max-width: 500px;
   }
+}
+
+/* CAROUSEL STUFF */
+
+.carousel-inner>.item>a>img {
+  height: 100%;
+  max-height: 100%;
 }
