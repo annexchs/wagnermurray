@@ -32,7 +32,9 @@
       <h3><?php the_title(); ?></h3>
       <h4><?php $clientKey="Client"; echo get_post_custom_values($clientKey)[0]; ?></h4>
       <h4><?php $locationKey="Location"; echo get_post_custom_values($locationKey)[0]; ?></h4>
-      <p><?php the_content(); ?></p>
+      <div class="visible-md-block visible-lg-block hidden-sm hidden-xs">
+        <?php the_content(); ?>
+      </div>
     </div>
     <div class="col-md-6 featured-project bottomfix">
       <div id="project-images" class="carousel slide" data-ride="carousel" data-interval="0">
@@ -86,6 +88,11 @@
         </a>
         <?php } ?>
       </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 visible-sm-block visible-xs-block hidden-md hidden-lg">
+      <?php the_content(); ?>
     </div>
   </div>
 
