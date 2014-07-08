@@ -10,7 +10,6 @@
           display:none;
         }
         .carousel-inner > .active {
-          max-height:600px;
           overflow:hidden;
         }
       </style>
