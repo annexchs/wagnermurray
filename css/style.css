@@ -686,7 +686,7 @@ color: #FFF;
   text-shadow: none;
 }
 
-a.carousel-control:hover {
+a.carousel-control:hover, a.carousel-control:focus {
   color: #666;
 }
 
