@@ -46,6 +46,8 @@
               'post_status' => 'inherit',
               'post_type' => 'attachment',
               'post_mime_type' => 'image',
+              'orderby' => 'menu_order',
+              'order' => 'DESC',
               'exclude' => get_post_thumbnail_id()
             ));
             $imgCount = 0;
