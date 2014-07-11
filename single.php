@@ -41,13 +41,13 @@
 
           <?php
             global $post;
-            $images = get_children(array(
+            $images = get_posts(array(
               'post_parent' => $post->ID,
               'post_status' => 'inherit',
               'post_type' => 'attachment',
               'post_mime_type' => 'image',
               'orderby' => 'menu_order',
-              'order' => 'DESC',
+              'order' => 'ASC',
               'exclude' => get_post_thumbnail_id()
             ));
             $imgCount = 0;
