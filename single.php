@@ -112,16 +112,26 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-body">
-        <div class="row">
-          <div class="col-md-10" >
-            <img class="img-responsive" src="<?php echo wp_get_attachment_image_src( $images[$x]->ID, 'full' )[0]?>" alt="<?php echo get_post_meta($image->ID, '_wp_attachment_image_alt', true); ?>">
-          </div>
-        </div>
+        <img class="img-responsive" src="<?php echo wp_get_attachment_image_src( $images[$x]->ID, 'full' )[0]?>" alt="<?php echo get_post_meta($image->ID, '_wp_attachment_image_alt', true); ?>">
       </div>
     </div>
   </div>
 </div>
 <?php } ?>
+
+<!--
+<script type="text/javascript">
+  $(function) {
+    $('.modal').on('show', function () {
+      $(this).find('.modal-body').css({
+        width:'auto', //probably not needed
+        height:'auto', //probably not needed 
+        'max-height':'100%'
+      });
+    });
+  }
+</script>
+-->
 
 <div>
 <div>

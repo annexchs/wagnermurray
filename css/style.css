@@ -772,3 +772,7 @@ a.carousel-control{
 .modal {
   margin-top: 2%;
 }
+
+.modal-content {
+  border-radius: 0px;
+}
