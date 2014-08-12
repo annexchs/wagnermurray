@@ -70,11 +70,15 @@
             if ($imgCount == 0) {
           ?>
           <div class="item active">
-            <img src="<?php echo wp_get_attachment_image_src( $image->ID, 'full' )[0]?>" alt="<?php echo get_post_meta($image->ID, '_wp_attachment_image_alt', true); ?>">
+            <a data-toggle="modal" href="#img<?php echo $imgCount ?>" >
+              <img src="<?php echo wp_get_attachment_image_src( $image->ID, 'full' )[0]?>" alt="<?php echo get_post_meta($image->ID, '_wp_attachment_image_alt', true); ?>">
+            </a>
           </div>
           <?php } else { ?>
           <div class="item">
-            <img src="<?php echo wp_get_attachment_image_src( $image->ID, 'full' )[0]?>" alt="<?php echo get_post_meta($image->ID, '_wp_attachment_image_alt', true); ?>">
+            <a data-toggle="modal" href="#img<?php echo $imgCount ?>" >
+              <img src="<?php echo wp_get_attachment_image_src( $image->ID, 'full' )[0]?>" alt="<?php echo get_post_meta($image->ID, '_wp_attachment_image_alt', true); ?>">
+            </a>
           </div>
           <?php } $imgCount+=1; }; ?>
         </div>
@@ -96,6 +100,31 @@
       <?php the_content(); ?>
     </div>
   </div>
+
+<!-- These close divs are to match the header -->  
+</div>
+</div>
+
+<?php for ($x=0; $x<$imgCount; $x++) { ?>
+
+<!-- Modal -->
+<div class="modal fade" id="img<?php echo $x ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-10" >
+            <img class="img-responsive" src="<?php echo wp_get_attachment_image_src( $images[$x]->ID, 'full' )[0]?>" alt="<?php echo get_post_meta($image->ID, '_wp_attachment_image_alt', true); ?>">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<?php } ?>
+
+<div>
+<div>
 
 <?php endwhile; else: ?>
 <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
