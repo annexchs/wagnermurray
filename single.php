@@ -105,11 +105,17 @@
 </div>
 </div>
 
-<?php for ($x=0; $x<$imgCount; $x++) { ?>
+<?php for ($x=0; $x<$imgCount; $x++) { 
+  $imgWidth = wp_get_attachment_image_src( $images[$x]->ID, 'full' )[1];
+?>
 
 <!-- Modal -->
 <div class="modal fade" id="img<?php echo $x ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
+<?php if($imgWidth < 900) { ?>
+  <div class="modal-dialog" >
+<?php } else { ?>
+  <div class="modal-dialog modal-lg" >
+<?php } ?>
     <div class="modal-content">
       <div class="modal-body">
         <img class="img-responsive" src="<?php echo wp_get_attachment_image_src( $images[$x]->ID, 'full' )[0]?>" alt="<?php echo get_post_meta($image->ID, '_wp_attachment_image_alt', true); ?>">
@@ -119,19 +125,13 @@
 </div>
 <?php } ?>
 
-<!--
-<script type="text/javascript">
-  $(function) {
-    $('.modal').on('show', function () {
-      $(this).find('.modal-body').css({
-        width:'auto', //probably not needed
-        height:'auto', //probably not needed 
-        'max-height':'100%'
-      });
-    });
-  }
-</script>
--->
+<!-- <script type="text/javascript">
+$('.modal').each(function(){
+  var modalWidth = $(this).width(),
+      modalMargin = '-' + (modalWidth/2) + 'px!important';
+  $(this).css('margin-left',modalMargin);
+});
+</script> -->
 
 <div>
 <div>
