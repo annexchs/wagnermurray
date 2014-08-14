@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 			<style>
 				.lead {
-					padding-top: 8px;
+					padding-top: 16px;
 				}
 			</style>
       <div class="row">

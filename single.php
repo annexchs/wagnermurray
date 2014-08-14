@@ -32,7 +32,7 @@
         .lead {
           color: #AAAAAA;
           font-family: 'Ideal Sans A', 'Ideal Sans B';
-          font-weight: 400px;
+          font-weight: 400;
           font-style: normal;
           font-size: 14px;
           line-height: 1.42857143
