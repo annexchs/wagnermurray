@@ -1,5 +1,16 @@
 <?php get_header(); ?>
 
+      <style>
+        .lead {
+          padding-top: 16px;
+        }
+        .align-center {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      </style>
+
       <div class="row">
       
       <div class="col-sm-10">

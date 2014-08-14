@@ -3,6 +3,11 @@
 				.lead {
 					padding-top: 16px;
 				}
+				.align-center {
+					display: block;
+					margin-left: auto;
+					margin-right: auto;
+				}
 			</style>
       <div class="row">
       
