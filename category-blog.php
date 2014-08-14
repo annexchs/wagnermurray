@@ -1,5 +1,9 @@
 <?php get_header(); ?>
-
+			<style>
+				.lead {
+					padding-top: 8px;
+				}
+			</style>
       <div class="row">
       
       <div class="col-sm-10">

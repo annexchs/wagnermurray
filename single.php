@@ -28,6 +28,16 @@
   </div>
   <div class="row" id="public-spaces projects">
     <div class="col-md-4">
+      <style>
+        .lead {
+          color: #AAAAAA;
+          font-family: 'Ideal Sans A', 'Ideal Sans B';
+          font-weight: 400px;
+          font-style: normal;
+          font-size: 14px;
+          line-height: 1.42857143
+        }
+      </style>
       <h3><?php the_title(); ?></h3>
       <h4><?php $clientKey="Client"; echo get_post_custom_values($clientKey)[0]; ?></h4>
       <h4><?php $locationKey="Location"; echo get_post_custom_values($locationKey)[0]; ?></h4>
@@ -48,7 +58,8 @@
               'post_mime_type' => 'image',
               'orderby' => 'menu_order',
               'order' => 'ASC',
-              'exclude' => get_post_thumbnail_id()
+              'exclude' => get_post_thumbnail_id(),
+              'numberposts' => -1
             ));
             $imgCount = 0;
             $imgCountTotal = count($images);
@@ -124,14 +135,6 @@
   </div>
 </div>
 <?php } ?>
-
-<!-- <script type="text/javascript">
-$('.modal').each(function(){
-  var modalWidth = $(this).width(),
-      modalMargin = '-' + (modalWidth/2) + 'px!important';
-  $(this).css('margin-left',modalMargin);
-});
-</script> -->
 
 <div>
 <div>

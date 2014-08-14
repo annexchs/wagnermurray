@@ -32,5 +32,4 @@ function get_custom_cat_template($single_template) {
  
 add_filter( "single_template", "get_custom_cat_template" ) ;
 
-
 ?>

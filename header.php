@@ -27,7 +27,6 @@
   <?php wp_head(); ?>
 </head>
  <body>
- 
   <script type="text/javascript">
     $(function() {
       FastClick.attach(document.body);
@@ -61,7 +60,7 @@
       </div>
       <?php endwhile; ?>
       <div class="col-xs-2 header address visible-md visible-lg">
-        <address><strong>Wagner Murray Archictects, P.A.</strong>
+        <address><strong>Wagner Murray Architects, P.A.</strong>
           601 S. Cedar St., Studio 101
           Charlotte, NC 28202<br>
           (704) 372-8603</address>
