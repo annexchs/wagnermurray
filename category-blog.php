@@ -3,7 +3,7 @@
 				.lead {
 					padding-top: 16px;
 				}
-				.align-center {
+				.aligncenter {
 					display: block;
 					margin-left: auto;
 					margin-right: auto;
