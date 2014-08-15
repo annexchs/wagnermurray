@@ -776,3 +776,14 @@ a.carousel-control{
 .modal-content {
   border-radius: 0px;
 }
+
+.modal-image {
+  margin-right: auto;
+  margin-left: auto
+}
+
+.modal-header {
+  padding: 0px;
+  border-bottom: 0px;
+  min-height: 12px
+}

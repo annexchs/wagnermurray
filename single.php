@@ -81,13 +81,13 @@
             if ($imgCount == 0) {
           ?>
           <div class="item active">
-            <a data-toggle="modal" href="#img<?php echo $imgCount ?>" >
+            <a data-toggle="modal" href="#modal1" id="cImage<?php echo $imgCount ?>" >
               <img src="<?php echo wp_get_attachment_image_src( $image->ID, 'full' )[0]?>" alt="<?php echo get_post_meta($image->ID, '_wp_attachment_image_alt', true); ?>">
             </a>
           </div>
           <?php } else { ?>
           <div class="item">
-            <a data-toggle="modal" href="#img<?php echo $imgCount ?>" >
+            <a data-toggle="modal" href="#modal1" id="cImage<?php echo $imgCount ?>">
               <img src="<?php echo wp_get_attachment_image_src( $image->ID, 'full' )[0]?>" alt="<?php echo get_post_meta($image->ID, '_wp_attachment_image_alt', true); ?>">
             </a>
           </div>
@@ -116,25 +116,70 @@
 </div>
 </div>
 
-<?php for ($x=0; $x<$imgCount; $x++) { 
-  $imgWidth = wp_get_attachment_image_src( $images[$x]->ID, 'full' )[1];
-?>
+  <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          </div>
+          <div id="project-images2" class="carousel slide" data-ride="carousel" data-interval="0">
+            <ol class="carousel-indicators">
 
-<!-- Modal -->
-<div class="modal fade" id="img<?php echo $x ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-<?php if($imgWidth < 900) { ?>
-  <div class="modal-dialog" >
-<?php } else { ?>
-  <div class="modal-dialog modal-lg" >
-<?php } ?>
-    <div class="modal-content">
-      <div class="modal-body">
-        <img class="img-responsive" src="<?php echo wp_get_attachment_image_src( $images[$x]->ID, 'full' )[0]?>" alt="<?php echo get_post_meta($image->ID, '_wp_attachment_image_alt', true); ?>">
+              <?php
+                global $post;
+                $images2 = get_posts(array(
+                  'post_parent' => $post->ID,
+                  'post_status' => 'inherit',
+                  'post_type' => 'attachment',
+                  'post_mime_type' => 'image',
+                  'orderby' => 'menu_order',
+                  'order' => 'ASC',
+                  'exclude' => get_post_thumbnail_id(),
+                  'numberposts' => -1
+                ));
+                $imgCount2 = 0;
+                $imgCountTotal2 = count($images2);
+                foreach($images2 as $image2) {
+                  if($imgCountTotal2 != 1 ) {
+                    if ($imgCount2 == 0) {
+              ?>
+                <li data-target="#project-images2" data-slide-to="0" class="active"></li>
+              <?php } else { ?>
+                <li data-target="#project-images2" data-slide-to="<?php echo $imgCount2?>" ></li>
+              <?php } $imgCount2+=1; }; }; ?>
+              
+            </ol>
+
+              <div class="carousel-inner" style="z-index: 16">
+              <?php $imgCount2=0; foreach($images2 as $image2) { 
+                if ($imgCount2 == 0) {
+              ?>
+              <div class="item active">
+                <img class="img-responsive modal-image" src="<?php echo wp_get_attachment_image_src( $image2->ID, 'full' )[0]?>" alt="<?php echo get_post_meta($image2->ID, '_wp_attachment_image_alt', true); ?>">
+              </div>
+              <?php } else { ?>
+              <div class="item">
+                <img class="img-responsive modal-image" src="<?php echo wp_get_attachment_image_src( $image2->ID, 'full' )[0]?>" alt="<?php echo get_post_meta($image2->ID, '_wp_attachment_image_alt', true); ?>">
+              </div>
+              <?php } $imgCount2+=1; }; ?>
+            </div>
+
+            <!-- Controls -->
+            <?php if($imgCount2 > 1) { ?>
+            <a class="left carousel-control" href="#project-images2" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#project-images2" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            <?php } ?>
+          </div>
+
+        </div>
       </div>
     </div>
   </div>
-</div>
-<?php } ?>
 
 <div>
 <div>
