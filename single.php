@@ -12,6 +12,9 @@
         .carousel-inner > .active {
           overflow:hidden;
         }
+        .carousel-indicators li {
+          pointer-events: none;
+        }
       </style>
       <h6 class="uppercase category-title-block" >
       <?php $catCount = 0; foreach((get_the_Category()) as $category) { ?>
@@ -46,7 +49,7 @@
       </div>
     </div>
     <div class="col-md-6 featured-project bottomfix">
-      <div id="project-images" class="carousel slide" data-ride="carousel" data-interval="0">
+      <div class="carousel slide project-images" data-ride="carousel" data-interval="0">
         <ol class="carousel-indicators">
 
           <?php
@@ -67,9 +70,9 @@
               if($imgCountTotal != 1 ) {
                 if ($imgCount == 0) {
           ?>
-            <li data-target="#project-images" data-slide-to="0" class="active"></li>
+            <li data-target=".project-images" data-to="0" class="active"></li>
           <?php } else { ?>
-            <li data-target="#project-images" data-slide-to="<?php echo $imgCount?>" ></li>
+            <li data-target=".project-images" data-to="<?php echo $imgCount?>" ></li>
           <?php } $imgCount+=1; }; }; ?>
           
         </ol>
@@ -96,10 +99,10 @@
 
         <!-- Controls -->
         <?php if($imgCount > 1) { ?>
-        <a class="left carousel-control" href="#project-images" data-slide="prev">
+        <a class="left carousel-control" href="[class*=project-images]" data-slide="prev">
           <span class="glyphicon glyphicon-chevron-left"></span>
         </a>
-        <a class="right carousel-control" href="#project-images" data-slide="next">
+        <a class="right carousel-control" href="[class*=project-images]" data-slide="next">
           <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
         <?php } ?>
@@ -123,7 +126,7 @@
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
           </div>
-          <div id="project-images2" class="carousel slide" data-ride="carousel" data-interval="0">
+          <div class="carousel slide project-images" data-ride="carousel" data-interval="0">
             <ol class="carousel-indicators">
 
               <?php
@@ -144,9 +147,9 @@
                   if($imgCountTotal2 != 1 ) {
                     if ($imgCount2 == 0) {
               ?>
-                <li data-target="#project-images2" data-slide-to="0" class="active"></li>
+                <li class="active" ></li>
               <?php } else { ?>
-                <li data-target="#project-images2" data-slide-to="<?php echo $imgCount2?>" ></li>
+                <li ></li>
               <?php } $imgCount2+=1; }; }; ?>
               
             </ol>
@@ -167,10 +170,10 @@
 
             <!-- Controls -->
             <?php if($imgCount2 > 1) { ?>
-            <a class="left carousel-control" href="#project-images2" data-slide="prev">
+            <a class="left carousel-control" href="[class*=project-images]" data-slide="prev">
               <span class="glyphicon glyphicon-chevron-left"></span>
             </a>
-            <a class="right carousel-control" href="#project-images2" data-slide="next">
+            <a class="right carousel-control" href="[class*=project-images]" data-slide="next">
               <span class="glyphicon glyphicon-chevron-right"></span>
             </a>
             <?php } ?>
